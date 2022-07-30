@@ -67,6 +67,11 @@
 ## Reference 参考手册
 
 - JavaScript 对象参考手册
+  - [Array](./Reference/Array.md)
+  - [Boolean](./Reference/Boolean.md)
+  - [Date](./Reference/Date.md)
+  - [Math](./Reference/Math.md)
+  - [String](./Reference/String.md)
 - BOM 浏览器对象模型
 - HTML DOM 参考手册
 - HTML Element 对象参考手册

@@ -4,7 +4,7 @@
 
 ## Noun 名称
 
-- [Selector 选择器](Selector.md)
+- [Selector 选择器](./Noun/Selector.md)
 - [Box Model 盒子模型]
 
 ## Attribute 属性
