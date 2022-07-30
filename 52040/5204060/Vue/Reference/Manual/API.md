@@ -521,7 +521,7 @@ author:
 
 - **示例**：
 
-  ```
+  ```vue
   // 简单语法
   Vue.component('props-demo-simple', {
     props: ['size', 'myMessage']

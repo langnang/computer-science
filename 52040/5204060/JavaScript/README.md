@@ -1,8 +1,8 @@
 # JavaScript
 
-[Awesome](./Awesome.md) \| [Awesome CHS](./Awesome.CHS.md)
-
 一种具有函数优先的轻量级，解释型或即时编译型的编程语言
+
+[Awesome](./Awesome.md) \| [Awesome CHS](./Awesome.CHS.md)
 
 ## Keyword 关键字
 
