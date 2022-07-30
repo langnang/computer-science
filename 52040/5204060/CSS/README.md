@@ -2,13 +2,16 @@
 
 > 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现[HTML](https://baike.baidu.com/item/HTML)（[标准通用标记语言](https://baike.baidu.com/item/%E6%A0%87%E5%87%86%E9%80%9A%E7%94%A8%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/6805073)的一个应用）或[XML](https://baike.baidu.com/item/XML)（标准通用标记语言的一个子集）等文件样式的计算机语言
 
-## 属性
+## Noun 名称
 
-- [选择器](docs/CSS%20-%20W3school/Reference/CSS%20选择器参考手册.md)
-- 边框和轮廓
-- 盒（框）
+- [Selector 选择器](Selector.md)
+- [Box Model 盒子模型]
+
+## Attribute 属性
+
+- Border 边框和 Outline 轮廓
 - 内容分页媒体
-- 定位
+- Position 定位
 - 可伸缩框
 - 生成内容
 - 网格
@@ -88,8 +91,8 @@
   - [圣杯布局]
   - [双飞翼布局]
 
-## 参考手册
+## 参考文献
 
-## 参考链接
-
+- [CSS 教程 | W3school](https://www.w3school.com.cn/css/index.asp)
+- [CSS 教程 | 菜鸟教程](https://www.runoob.com/css/css-tutorial.html)
 - [一面 3：CSS-HTML 知识点与高频考题解析](https://juejin.im/post/5e76cfd0e51d4527286493f8)

@@ -1,7 +1,3 @@
----
-sidebar: auto
----
-
 # Interview 面试题
 
 ## [HTML](../52040/5204060/HTML/README.md)
@@ -9,7 +5,7 @@ sidebar: auto
 ## [CSS](../52040/5204060/CSS/README.md)
 
 - 说说你对盒子模型的理解?
-- [CSS 选择器有哪些？优先级？哪些属性可以继承？](../52040/5204060/CSS/Reference/W3school/CSS%20选择器.md)
+- [CSS 选择器有哪些？优先级？哪些属性可以继承？](../52040/5204060/CSS/Noun/Selector.md)
 - [说说 em/px/rem/vh/vw 区别?](../52040/5204060/CSS/Interview/em、px、rem、vh、vw%20的区别.md)
 - 说说设备像素、css 像素、设备独立像素、dpr、ppi 之间的区别？
 - CSS 中，有哪些方式可以隐藏页面元素？区别?
