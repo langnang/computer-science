@@ -1,5 +1,7 @@
 # JavaScript
 
+[Awesome](./Awesome.md) \| [Awesome CHS](./Awesome.CHS.md)
+
 一种具有函数优先的轻量级，解释型或即时编译型的编程语言
 
 ## Keyword 关键字
@@ -72,7 +74,6 @@
 
 ## 参考文献
 
-- [Awesome JavaScript](./Awesome.md) \| [CHS](./Awesome.CHS.md)
 - JavaScript 高级程序设计（第 4 版）
 - JavaScript 忍者秘籍（第 2 版）
 - 你不知道的 JS 三卷
