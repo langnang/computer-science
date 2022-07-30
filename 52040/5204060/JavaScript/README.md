@@ -5,31 +5,60 @@
 - `var`
 - `typeof`
 - `instanceof`
+- [`this`](./Keyword/this.md)
 - `new`
 - `call`
 - `apply`
 - `bind`
-- `ajax`
+- [`ajax`](./Keyword/ajax.md)
+- `debugger`
+- [`strict`](./Keyword/strict.md)
 
 ## Noun 名词
 
+- [Keyword 关键字和保留字](./Noun/Keyword.md)
+- [DataType 数据类型](./Noun/DataType.md)
+- [Console 控制台](./Noun/Console.md)
 - Hoisting 变量提升
 - [Closure 闭包](./Noun/Closure.md)
-- Scope 作用域与作用域链
+- [Recursion 递归](./Noun/Recursion.md)
+- [Scope 作用域与作用域链](./Noun/Scope.md)
 - Copy 浅拷贝与深拷贝
-- 事件委托
 - 事件监听
 - 事件模型
-- 事件代理
-- 事件循环
-- LocalStorage 本地存储
-- SessionStorage 本地存储
+- Event 事件委托/代理
+- [Event Loop 事件循环机制]
+- LocalStorage 本地存储与 SessionStorage 会话存储
 - BFC(Block Formatting Context) 块级格式化上下文
 - Debounce 防抖
 - Throttling 节流
-- 宏任务与微任务
-- 原型链
+- `asynchronous` 异步任务与 `synchronous` 同步任务
+- `MacroTask` 宏任务与 `MicroTask` 微任务
+- Prototype 原型与原型链
 - 垃圾回收和内存泄漏
+- Operator 操作符与运算符
+- Grammar 语法
+
+## Design Pattern 设计模式
+
+- Factory 工程模式
+- 构造函数模式
+- 原型模式
+- 单例模式
+- 外观模式
+- 适配器模式
+- 装饰者模式
+- 桥接模式
+- 模块方法模式
+- 观察者模式
+- 状态模式
+- 策略模式
+- 访问模式
+- 中介者模式
+
+## Interview
+
+- [为什么 JavaScript 是单线程](./Interview/%E4%B8%BA%E4%BB%80%E4%B9%88_JavaScript_%E6%98%AF%E5%8D%95%E7%BA%BF%E7%A8%8B.md)
 
 ## Reference 参考手册
 
@@ -39,7 +68,7 @@
 - HTML Element 对象参考手册
 - Web API
 
-## 推荐书籍
+## 参考文献
 
 - JavaScript 高级程序设计（第 4 版）
 - JavaScript 忍者秘籍（第 2 版）

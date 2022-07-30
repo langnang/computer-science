@@ -23,7 +23,7 @@
 - 如何使用 CSS 完成视差滚动效果?
 - CSS 如何画一个三角形？原理是什么？
 - 让 Chrome 支持小于 12px 的文字方式有哪些？区别？
-- 说说对 CSS 预编语言的理解？有哪些区别?
+- [说说对 CSS 预编语言的理解？有哪些区别?](../52040/5204060/CSS/Interview/说说对Css预编语言的理解？有哪些区别.md)
 
 ## [JavaScript](../52040/5204060/JavaScript/README.md)
 
@@ -231,5 +231,5 @@
 
 ## 参考文献
 
-- [web 前端面试 - 面试官系列 (vue3js.cn)](https://vue3js.cn/interview/) | [febobo/web-interview](https://github.com/febobo/web-interview): 语音打卡社群维护的前端面试题库，包含不限于 Vue 面试题，React 面试题，JS 面试题，HTTP 面试题，工程化面试题，CSS 面试题，算法面试题，大厂面试题，高频面试题
+- [web 前端面试 - 面试官系列 (vue3js.cn)](https://vue3js.cn/interview/) \| [febobo/web-interview](https://github.com/febobo/web-interview): 语音打卡社群维护的前端面试题库，包含不限于 Vue 面试题，React 面试题，JS 面试题，HTTP 面试题，工程化面试题，CSS 面试题，算法面试题，大厂面试题，高频面试题
 - [herbertkarajan/fe-interview-questions](https://github.com/HerbertKarajan/Fe-Interview-questions): 目前最全的前端开发面试题及答案
