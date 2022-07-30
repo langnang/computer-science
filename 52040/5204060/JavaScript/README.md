@@ -72,6 +72,7 @@
 
 ## 参考文献
 
+- [Awesome JavaScript](./Awesome.md) \| [CHS](./Awesome.CHS.md)
 - JavaScript 高级程序设计（第 4 版）
 - JavaScript 忍者秘籍（第 2 版）
 - 你不知道的 JS 三卷

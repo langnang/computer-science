@@ -1,23 +1,3 @@
-[Open in github.dev](https://github.dev/) [Open in a new github.dev tab](https://github.dev/)
-
-## Latest commit
-
-[![@huanglimin](https://avatars.githubusercontent.com/u/8531908?s=48&v=4)](https://github.com/huanglimin)
-
-## Files
-
-[Permalink](https://github.com/jobbole/awesome-javascript-cn/tree/4a72e7015da022592a0d782e75e80992cc0231e6)
-
-Failed to load latest commit information.
-
-Type
-
-Name
-
-Latest commit message
-
-Commit time
-
 ## JavaScript 资源大全中文版
 
 [awesome-javascript](https://github.com/sorrycc/awesome-javascript) 是 sorrycc 发起维护的 JS 资源列表，内容包括：包管理器、加载器、测试框架、运行器、QA、MVC 框架和库、模板引擎、数据可视化、时间轴、编辑器等。由「开源前哨」和「前端大全」微信公号团队维护更新。
