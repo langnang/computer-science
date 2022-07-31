@@ -18,32 +18,53 @@
 
 ## 构造器
 
-`Object()`: 创建一个新的 Object 对象。该对象将会包裹（wrapper）传入的参数
+`Object()`
+
+> 创建一个新的 Object 对象。该对象将会包裹（wrapper）传入的参数
 
 ## 静态方法
 
-- `Object.create()`: 使用指定的原型对象和属性创建一个新对象。
-- `Object.defineProperty()`: 给对象添加一个属性并指定该属性的配置。
-- `Object.defineProperties()`: 给对象添加多个属性并分别指定它们的配置。
-- `Object.freeze()`: 冻结对象：其他代码不能删除或更改任何属性。
-- `Object.getOwnPropertyNames()`: 返回一个数组，它包含了指定对象所有的可枚举或不可枚举的属性名。
-- `Object.getOwnPropertySymbols()`: 返回一个数组，它包含了指定对象自身所有的符号属性。
-- `Object.isExtensible()`: 判断对象是否可扩展。
-- `Object.isFrozen()`: 判断对象是否已经冻结。
-- `Object.isSealed()`: 判断对象是否已经密封。
-- `Object.preventExtensions()`: 防止对象的任何扩展。
-- `Object.seal()`: 防止其他代码删除对象的属性。
+- `Object.create()`
+  > 使用指定的原型对象和属性创建一个新对象。
+- `Object.defineProperty()`
+  > 给对象添加一个属性并指定该属性的配置。
+- `Object.defineProperties()`
+  > 给对象添加多个属性并分别指定它们的配置。
+- `Object.freeze()`
+  > 冻结对象：其他代码不能删除或更改任何属性。
+- `Object.getOwnPropertyNames()`
+  > 返回一个数组，它包含了指定对象所有的可枚举或不可枚举的属性名。
+- `Object.getOwnPropertySymbols()`
+  > 返回一个数组，它包含了指定对象自身所有的符号属性。
+- `Object.isExtensible()`
+  > 判断对象是否可扩展。
+- `Object.isFrozen()`
+  > 判断对象是否已经冻结。
+- `Object.isSealed()`
+  > 判断对象是否已经密封。
+- `Object.preventExtensions()`
+  > 防止对象的任何扩展。
+- `Object.seal()`
+  > 防止其他代码删除对象的属性。
 
 ### ES6 新增静态方法
 
-- `Object.assign()`: 通过复制一个或多个对象来创建一个新的对象。
-- `Object.entries()`: 返回给定对象自身可枚举属性的 [key, value] 数组。
-- `Object.getOwnPropertyDescriptor()`: 返回对象指定的属性配置。
-- `Object.getPrototypeOf()`: 返回指定对象的原型对象。
-- `Object.is()`: 比较两个值是否相同。所有 NaN 值都相等（这与==和===不同）。
-- `Object.keys()`: 返回一个包含所有给定对象自身可枚举属性名称的数组。
-- `Object.setPrototypeOf()`: 设置对象的原型（即内部 [[Prototype]] 属性）。
-- `Object.values()`: 返回给定对象自身可枚举值的数组。
+- `Object.assign()`
+  > 通过复制一个或多个对象来创建一个新的对象。
+- `Object.entries()`
+  > 返回给定对象自身可枚举属性的 [key, value] 数组。
+- `Object.getOwnPropertyDescriptor()`
+  > 返回对象指定的属性配置。
+- `Object.getPrototypeOf()`
+  > 返回指定对象的原型对象。
+- `Object.is()`
+  > 比较两个值是否相同。所有 NaN 值都相等（这与==和===不同）。
+- `Object.keys()`
+  > 返回一个包含所有给定对象自身可枚举属性名称的数组。
+- `Object.setPrototypeOf()`
+  > 设置对象的原型（即内部 [[Prototype]] 属性）。
+- `Object.values()`
+  > 返回给定对象自身可枚举值的数组。
 
 ## 实例属性
 
@@ -52,16 +73,26 @@
 
 ## 实例方法
 
-- `Object.prototype.__defineGetter__()`: 将一个属性与一个函数相关联，当该属性被访问时，执行该函数，并且返回函数的返回值。
-- `Object.prototype.__defineSetter__()`: 将一个属性与一个函数相关联，当该属性被设置时，执行该函数，执行该函数去修改某个属性。
-- `Object.prototype.__lookupGetter__()`: 返回一个函数，该函数通过给定属性的 `Object.prototype.__defineGetter__()` 得出。
-- `Object.prototype.__lookupSetter__()`: 返回一个函数，该函数通过给定属性的 `Object.prototype.__defineSetter__()` 得出。
-- `Object.prototype.hasOwnProperty()`: 返回一个布尔值，用于表示一个对象自身是否包含指定的属性，该方法并不会查找原型链上继承来的属性。
-- `Object.prototype.isPrototypeOf()`: 返回一个布尔值，用于表示该方法所调用的对象是否在指定对象的原型链中。
-- `Object.prototype.propertyIsEnumerable()`: 返回一个布尔值，用于表示内部属性 ECMAScript [[Enumerable]] attribute 是否被设置。
-- `Object.prototype.toLocaleString()`: 调用 toString()。
-- `Object.prototype.toString()`: 返回一个代表该对象的字符串。
-- `Object.prototype.valueOf()`: 返回指定对象的原始值。
+- `Object.prototype.__defineGetter__()`
+  > 将一个属性与一个函数相关联，当该属性被访问时，执行该函数，并且返回函数的返回值。
+- `Object.prototype.__defineSetter__()`
+  > 将一个属性与一个函数相关联，当该属性被设置时，执行该函数，执行该函数去修改某个属性。
+- `Object.prototype.__lookupGetter__()`
+  > 返回一个函数，该函数通过给定属性的 `Object.prototype.__defineGetter__()` 得出。
+- `Object.prototype.__lookupSetter__()`
+  > 返回一个函数，该函数通过给定属性的 `Object.prototype.__defineSetter__()` 得出。
+- `Object.prototype.hasOwnProperty()`
+  > 返回一个布尔值，用于表示一个对象自身是否包含指定的属性，该方法并不会查找原型链上继承来的属性。
+- `Object.prototype.isPrototypeOf()`
+  > 返回一个布尔值，用于表示该方法所调用的对象是否在指定对象的原型链中。
+- `Object.prototype.propertyIsEnumerable()`
+  > 返回一个布尔值，用于表示内部属性 ECMAScript [[Enumerable]] attribute 是否被设置。
+- `Object.prototype.toLocaleString()`
+  > 调用 toString()。
+- `Object.prototype.toString()`
+  > 返回一个代表该对象的字符串。
+- `Object.prototype.valueOf()`
+  > 返回指定对象的原始值。
 
 ## 总结
 
