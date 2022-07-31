@@ -2,7 +2,7 @@
 
 一种具有函数优先的轻量级，解释型或即时编译型的编程语言
 
-[Awesome](./Awesome.md) \| [Awesome CHS](./Awesome.CHS.md)
+[Awesome](./Awesome.md) \| [Awesome zh-CN](./Awesome.CHS.md)
 
 ## Keyword 关键字
 
@@ -71,6 +71,7 @@
   - [Boolean](./Reference/Boolean.md)
   - [Date](./Reference/Date.md)
   - [Math](./Reference/Math.md)
+  - [Object](./Reference/Object.md)
   - [String](./Reference/String.md)
 - BOM 浏览器对象模型
 - HTML DOM 参考手册
@@ -79,6 +80,9 @@
 
 ## 参考文献
 
+- https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
+- https://www.w3school.com.cn/js/index.asp
+- https://es6.ruanyifeng.com/
 - JavaScript 高级程序设计（第 4 版）
 - JavaScript 忍者秘籍（第 2 版）
 - 你不知道的 JS 三卷

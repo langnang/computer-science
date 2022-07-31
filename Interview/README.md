@@ -62,10 +62,10 @@
 - 什么是单点登录？如何实现？
 - web 常见的攻击方式有哪些？如何防御？
 
-## [ES2015/ES6](../52040/5204060/ECMAScript/ES6/README.md)
+### [ES2015/ES6](../52040/5204060/JavaScript/ES6/README.md)
 
-- [说说 var、let、const 之间的区别](../52040/5204060/ECMAScript/ES6/Interview/var、let、const%20之间的区别.md)
-- [ES6 中数组新增了哪些扩展?](../52040/5204060/ECMAScript/ES6/Interview/ES6%20中数组新增了哪些扩展.md)
+- [说说 var、let、const 之间的区别](../52040/5204060/JavaScript/ES6/Interview/var、let、const%20之间的区别.md)
+- [ES6 中数组新增了哪些扩展?](../52040/5204060/JavaScript/ES6/Interview/ES6%20中数组新增了哪些扩展.md)
 - ES6 中对象新增了哪些扩展?
 - ES6 中函数新增了哪些扩展?
 - ES6 中新增的 Set、Map 两种数据结构怎么理解?
