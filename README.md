@@ -48,7 +48,7 @@
   - [React](./52040/5204060/React/README.md)
   - [小程序](./52040/5204060/WeChat/README.md)
   - [Vue](./52040/5204060/Vue/README.md)
-  - [NPM Packages](./52040/5204060/NPM%20%Packages/README.md)
+  - [NPM Packages](./52040/5204060/NPM%20Packages/README.md)
 - 5204070 软件工程
 - 5204099 计算机软件其他学科
 
