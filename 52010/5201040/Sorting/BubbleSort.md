@@ -16,6 +16,16 @@
 3. 针对所有的元素重复以上的步骤，除了最后一个。
 4. 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
 
+```mermaid
+flowchart TB
+start("BubbleSort(array)")-->op("for (const i = 0; i < array.length - 1; i++)")-->cond("array[i] > array[i + 1]?")
+cond--Yes-->io("[array[i], array[i + 1]] = [array[i + 1], array[i]]")
+cond--No-->op
+End
+```
+
+
+
 @flowstart
 st=>start: Start
 e=>end: End
