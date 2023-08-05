@@ -21,7 +21,7 @@ author: rohan-paul
 
 ---
 
-#### You can find me here..
+#### You can find me here
 
 - 🐦 TWITTER: [https://twitter.com/rohanpaul_ai](https://twitter.com/rohanpaul_ai)
 - 👨🔧 Kaggle: [https://www.kaggle.com/paulrohan2020](https://www.kaggle.com/paulrohan2020)
@@ -35,19 +35,19 @@ author: rohan-paul
 
 ---
 
-## Below are a collection of super-popular Interview questions, along with explanations and implementation examples that I was putting together for myself while preparing for my first Full-Stack JavaScript job interviews.
+## Below are a collection of super-popular Interview questions, along with explanations and implementation examples that I was putting together for myself while preparing for my first Full-Stack JavaScript job interviews
 
 ## Table of Contents of this Readme file
 
-1.  [Most common Fundamental JavaScript Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-fundamental-javascript-interview-topics--questions)
-2.  [Most common Tricky Javascript Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-tricky-javascript-interview-topics--questions)
-3.  [Most common Async/Await and Promise related Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-asyncawait-and-promise-related-interview-topics--questions)
-4.  [Most common Node Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-node-interview-topics--questions)
-5.  [Most common Web-Development Architecture related Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-web-development-architecture-related-interview-topics--questions)
-6.  [Most common React Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-react-interview-topics--questions)
-7.  [Most common Redux Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-redux-interview-topics--questions)
-8.  [Most common Angular Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-angular-interview-topics--questions)
-9.  [Most common MongoDB Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-mongodb-interview-topics--questions)
+1. [Most common Fundamental JavaScript Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-fundamental-javascript-interview-topics--questions)
+2. [Most common Tricky Javascript Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-tricky-javascript-interview-topics--questions)
+3. [Most common Async/Await and Promise related Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-asyncawait-and-promise-related-interview-topics--questions)
+4. [Most common Node Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-node-interview-topics--questions)
+5. [Most common Web-Development Architecture related Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-web-development-architecture-related-interview-topics--questions)
+6. [Most common React Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-react-interview-topics--questions)
+7. [Most common Redux Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-redux-interview-topics--questions)
+8. [Most common Angular Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-angular-interview-topics--questions)
+9. [Most common MongoDB Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-mongodb-interview-topics--questions)
 10. [Most common HTML Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-html-interview-topics--questions)
 
 11. [Most common CSS Interview Topics & Questions](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#most-common-css-interview-topics--questions)
@@ -378,7 +378,7 @@ author: rohan-paul
 - [Redirect-from-react-router-dom](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/React/Redirect-from-react-router-dom.md)
 - [server-side-rendering-react-app](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/React/server-side-rendering-react-app.md)
 - [setState-what-does-it-do](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/React/setState-what-does-it-do.md)
-- [super(props)-why-its-required](<https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/React/super(props)-why-its-required.md>)
+- [super(props)-why-its-required](<https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/React/super(props)-why-its-required.md $
 - [this.props.children](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/React/this.props.children.md)
 - [Virtual-DOM-and-Reconciliation-Algorithm](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/React/Virtual-DOM-and-Reconciliation-Algorithm.md)
 - [What are the approaches to include polyfills in your create-react-app](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/React/include-polyfills.md)
@@ -453,7 +453,7 @@ author: rohan-paul
 - [subscribe-method](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/Observables/subscribe-method.md)
 - [Reading-Route-Parameters in Angular](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/Routing/Reading-Route-Parameters.md)
 - [rx-js-best-practice - Dont-pass-streams-to-components-directly](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/best-practices-common-pattern/Dont-pass-streams-to-components-directly.md)
-- [subscribe_pattern-with-take(1)](<https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/best-practices-common-pattern/subscribe_pattern-with-take(1).md>)
+- [subscribe_pattern-with-take(1)](<https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/best-practices-common-pattern/subscribe_pattern-with-take(1).md $
 - [Best Practice - when_using_async_pipe_no_need_to_unsubscribe](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/best-practices-common-pattern/when_using_async_pipe_no_need_to_unsubscribe.md)
 - [Is there a need to unsubscribe from the Observable the Angular HttpClient's methods return?](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/angular-httpclient-unsubscribe.md)
 - [combineLatest-basics](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/combineLatest-basics.md)
@@ -466,7 +466,7 @@ author: rohan-paul
 - [More on retryWhen-basics](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/retryWhen-basics-2.md)
 - [switchMap-get-route-params](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/switchMap-get-route-params.md)
 - [switchMap-good-example-for-user-input](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/switchMap-good-example-for-user-input.md)
-- [take(1)](<https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/take(1).md>)
+- [take(1)](<https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/rx-js/take(1).md $
 - [class-in-typescript](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/TypeScript/Class-Definitions/class-in-typescript.md)
 - [generic-typescript-class-definition](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/TypeScript/Class-Definitions/generic-typescript-class-definition.md)
 - [get-method-in-typescript](https://github.com/rohan-paul/Awesome-JavaScript-Interviews/blob/master/Angular-Topics-Interview/TypeScript/Class-Definitions/get-method-in-typescript.md)
@@ -684,15 +684,15 @@ author: rohan-paul
 
 ## Most frequently asked concepts for Front End Engineering Interview
 
-1.  call, apply and bind method
-2.  Polyfill for bind method
-3.  Currying
-4.  Debouncing
-5.  async vs defer
-6.  Event Bubbling & Capturing
-7.  Prototype & Prototypal Inheritance
-8.  Throttling
-9.  Thinking Recursively
+1. call, apply and bind method
+2. Polyfill for bind method
+3. Currying
+4. Debouncing
+5. async vs defer
+6. Event Bubbling & Capturing
+7. Prototype & Prototypal Inheritance
+8. Throttling
+9. Thinking Recursively
 10. Local Storage and Session Storage
 11. CORS
 12. sum(a)(b)(c)...(n)
@@ -747,7 +747,7 @@ author: rohan-paul
 
 [\[↑\] Back to top](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#table-of-contents-of-this-readme-file)
 
-## Best places to job hunt for remote jobs:
+## Best places to job hunt for remote jobs
 
 - 🔗 FlexJobs: [http://flexjobs.com](http://flexjobs.com/)
 - 🔗 WeWorkRemotely: [http://weworkremotely.com](http://weworkremotely.com/)
@@ -795,7 +795,7 @@ author: rohan-paul
 
 [\[↑\] Back to top](https://github.com/rohan-paul/Awesome-JavaScript-Interviews#table-of-contents-of-this-readme-file)
 
-## Women focused job boards!
+## Women focused job boards
 
 - 🔗 Women Who Code: [http://womenwhocode.com/jobs](http://womenwhocode.com/jobs)
 - 🔗 Tech Ladies - [https://hiretechladies.com](https://hiretechladies.com/)

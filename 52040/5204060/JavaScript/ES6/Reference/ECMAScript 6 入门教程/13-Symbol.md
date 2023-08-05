@@ -1,13 +1,13 @@
 # Symbol
 
-1.  [概述](https://es6.ruanyifeng.com/#docs/symbol#%E6%A6%82%E8%BF%B0)
-2.  [Symbol.prototype.description](https://es6.ruanyifeng.com/#docs/symbol#Symbol.prototype.description)
-3.  [作为属性名的 Symbol](https://es6.ruanyifeng.com/#docs/symbol#%E4%BD%9C%E4%B8%BA%E5%B1%9E%E6%80%A7%E5%90%8D%E7%9A%84%20Symbol)
-4.  [实例：消除魔术字符串](https://es6.ruanyifeng.com/#docs/symbol#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E6%B6%88%E9%99%A4%E9%AD%94%E6%9C%AF%E5%AD%97%E7%AC%A6%E4%B8%B2)
-5.  [属性名的遍历](https://es6.ruanyifeng.com/#docs/symbol#%E5%B1%9E%E6%80%A7%E5%90%8D%E7%9A%84%E9%81%8D%E5%8E%86)
-6.  [Symbol.for()，Symbol.keyFor()](<https://es6.ruanyifeng.com/#docs/symbol#Symbol.for()%EF%BC%8CSymbol.keyFor()>)
-7.  [实例：模块的 Singleton 模式](https://es6.ruanyifeng.com/#docs/symbol#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E6%A8%A1%E5%9D%97%E7%9A%84%20Singleton%20%E6%A8%A1%E5%BC%8F)
-8.  [内置的 Symbol 值](https://es6.ruanyifeng.com/#docs/symbol#%E5%86%85%E7%BD%AE%E7%9A%84%20Symbol%20%E5%80%BC)
+1. [概述](https://es6.ruanyifeng.com/#docs/symbol#%E6%A6%82%E8%BF%B0)
+2. [Symbol.prototype.description](https://es6.ruanyifeng.com/#docs/symbol#Symbol.prototype.description)
+3. [作为属性名的 Symbol](https://es6.ruanyifeng.com/#docs/symbol#%E4%BD%9C%E4%B8%BA%E5%B1%9E%E6%80%A7%E5%90%8D%E7%9A%84%20Symbol)
+4. [实例：消除魔术字符串](https://es6.ruanyifeng.com/#docs/symbol#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E6%B6%88%E9%99%A4%E9%AD%94%E6%9C%AF%E5%AD%97%E7%AC%A6%E4%B8%B2)
+5. [属性名的遍历](https://es6.ruanyifeng.com/#docs/symbol#%E5%B1%9E%E6%80%A7%E5%90%8D%E7%9A%84%E9%81%8D%E5%8E%86)
+6. [Symbol.for()，Symbol.keyFor()](<https://es6.ruanyifeng.com/#docs/symbol#Symbol.for()%EF%BC%8CSymbol.keyFor() $
+7. [实例：模块的 Singleton 模式](https://es6.ruanyifeng.com/#docs/symbol#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E6%A8%A1%E5%9D%97%E7%9A%84%20Singleton%20%E6%A8%A1%E5%BC%8F)
+8. [内置的 Symbol 值](https://es6.ruanyifeng.com/#docs/symbol#%E5%86%85%E7%BD%AE%E7%9A%84%20Symbol%20%E5%80%BC)
 
 ## 概述
 

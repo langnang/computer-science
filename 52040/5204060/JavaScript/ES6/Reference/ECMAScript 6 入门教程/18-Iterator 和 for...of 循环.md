@@ -1,12 +1,12 @@
 # Iterator 和 for...of 循环
 
-1.  [Iterator（遍历器）的概念](https://es6.ruanyifeng.com/#docs/iterator#Iterator%EF%BC%88%E9%81%8D%E5%8E%86%E5%99%A8%EF%BC%89%E7%9A%84%E6%A6%82%E5%BF%B5)
-2.  [默认 Iterator 接口](https://es6.ruanyifeng.com/#docs/iterator#%E9%BB%98%E8%AE%A4%20Iterator%20%E6%8E%A5%E5%8F%A3)
-3.  [调用 Iterator 接口的场合](https://es6.ruanyifeng.com/#docs/iterator#%E8%B0%83%E7%94%A8%20Iterator%20%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%9C%BA%E5%90%88)
-4.  [字符串的 Iterator 接口](https://es6.ruanyifeng.com/#docs/iterator#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%20Iterator%20%E6%8E%A5%E5%8F%A3)
-5.  [Iterator 接口与 Generator 函数](https://es6.ruanyifeng.com/#docs/iterator#Iterator%20%E6%8E%A5%E5%8F%A3%E4%B8%8E%20Generator%20%E5%87%BD%E6%95%B0)
-6.  [遍历器对象的 return()，throw()](<https://es6.ruanyifeng.com/#docs/iterator#%E9%81%8D%E5%8E%86%E5%99%A8%E5%AF%B9%E8%B1%A1%E7%9A%84%20return()%EF%BC%8Cthrow()>)
-7.  [for...of 循环](https://es6.ruanyifeng.com/#docs/iterator#for...of%20%E5%BE%AA%E7%8E%AF)
+1. [Iterator（遍历器）的概念](https://es6.ruanyifeng.com/#docs/iterator#Iterator%EF%BC%88%E9%81%8D%E5%8E%86%E5%99%A8%EF%BC%89%E7%9A%84%E6%A6%82%E5%BF%B5)
+2. [默认 Iterator 接口](https://es6.ruanyifeng.com/#docs/iterator#%E9%BB%98%E8%AE%A4%20Iterator%20%E6%8E%A5%E5%8F%A3)
+3. [调用 Iterator 接口的场合](https://es6.ruanyifeng.com/#docs/iterator#%E8%B0%83%E7%94%A8%20Iterator%20%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%9C%BA%E5%90%88)
+4. [字符串的 Iterator 接口](https://es6.ruanyifeng.com/#docs/iterator#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%20Iterator%20%E6%8E%A5%E5%8F%A3)
+5. [Iterator 接口与 Generator 函数](https://es6.ruanyifeng.com/#docs/iterator#Iterator%20%E6%8E%A5%E5%8F%A3%E4%B8%8E%20Generator%20%E5%87%BD%E6%95%B0)
+6. [遍历器对象的 return()，throw()](<https://es6.ruanyifeng.com/#docs/iterator#%E9%81%8D%E5%8E%86%E5%99%A8%E5%AF%B9%E8%B1%A1%E7%9A%84%20return()%EF%BC%8Cthrow() $
+7. [for...of 循环](https://es6.ruanyifeng.com/#docs/iterator#for...of%20%E5%BE%AA%E7%8E%AF)
 
 ## Iterator（遍历器）的概念
 

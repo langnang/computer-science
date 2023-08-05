@@ -122,13 +122,13 @@ array:  [0] [1] [2] [3] [4] [5] [6] [7] [8] [9]
 
 ### 时间复杂度
 
-- 最好时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(nlogn)>)
-- 最坏时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(nlogn)>)
-- 平均时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(nlogn)>)
+- 最好时间复杂度 $ O(nlogn) $
+- 最坏时间复杂度 $ O(nlogn) $
+- 平均时间复杂度 $ O(nlogn) $
 
 ### 空间复杂度
 
-- 平均空间复杂度 ![](<https://latex.codecogs.com/png.latex?O(1)>)
+- 平均空间复杂度 $ O(1) $
 
 ### 稳定性
 

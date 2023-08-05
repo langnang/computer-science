@@ -1,10 +1,10 @@
 # Set 和 Map 数据结构
 
-1.  [概述](https://es6.ruanyifeng.com/#docs/proxy#%E6%A6%82%E8%BF%B0)
-2.  [Proxy 实例的方法](https://es6.ruanyifeng.com/#docs/proxy#Proxy%20%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%96%B9%E6%B3%95)
-3.  [Proxy.revocable()](<https://es6.ruanyifeng.com/#docs/proxy#Proxy.revocable()>)
-4.  [this 问题](https://es6.ruanyifeng.com/#docs/proxy#this%20%E9%97%AE%E9%A2%98)
-5.  [实例：Web 服务的客户端](https://es6.ruanyifeng.com/#docs/proxy#%E5%AE%9E%E4%BE%8B%EF%BC%9AWeb%20%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF)
+1. [概述](https://es6.ruanyifeng.com/#docs/proxy#%E6%A6%82%E8%BF%B0)
+2. [Proxy 实例的方法](https://es6.ruanyifeng.com/#docs/proxy#Proxy%20%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%96%B9%E6%B3%95)
+3. [Proxy.revocable()](<https://es6.ruanyifeng.com/#docs/proxy#Proxy.revocable() $
+4. [this 问题](https://es6.ruanyifeng.com/#docs/proxy#this%20%E9%97%AE%E9%A2%98)
+5. [实例：Web 服务的客户端](https://es6.ruanyifeng.com/#docs/proxy#%E5%AE%9E%E4%BE%8B%EF%BC%9AWeb%20%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF)
 
 ## 概述
 

@@ -30,13 +30,13 @@ array:  [6] [3] [9] [4] [7] [1] [5] [2] [8] [0];pivot:
 
 ### 时间复杂度
 
-- 最好时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(nlogn);>)
-- 最坏时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(n^{2})>)
-- 平均时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(nlogn);>)
+- 最好时间复杂度 $ O(nlogn); $
+- 最坏时间复杂度 $ O(n^{2}) $
+- 平均时间复杂度 $ O(nlogn); $
 
 ### 空间复杂度
 
-- 平均空间复杂度 ![](<https://latex.codecogs.com/png.latex?O(nlogn);>)
+- 平均空间复杂度 $ O(nlogn); $
 
 ### 稳定性
 

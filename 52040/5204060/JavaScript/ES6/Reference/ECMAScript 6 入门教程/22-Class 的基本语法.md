@@ -1,14 +1,14 @@
 # Class 的基本语法
 
-1.  [类的由来](https://es6.ruanyifeng.com/#docs/class#%E7%B1%BB%E7%9A%84%E7%94%B1%E6%9D%A5)
-2.  [constructor() 方法](<https://es6.ruanyifeng.com/#docs/class#constructor()%20%E6%96%B9%E6%B3%95>)
-3.  [类的实例](https://es6.ruanyifeng.com/#docs/class#%E7%B1%BB%E7%9A%84%E5%AE%9E%E4%BE%8B)
-4.  [实例属性的新写法](https://es6.ruanyifeng.com/#docs/class#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7%E7%9A%84%E6%96%B0%E5%86%99%E6%B3%95)
-5.  [取值函数（getter）和存值函数（setter）](https://es6.ruanyifeng.com/#docs/class#%E5%8F%96%E5%80%BC%E5%87%BD%E6%95%B0%EF%BC%88getter%EF%BC%89%E5%92%8C%E5%AD%98%E5%80%BC%E5%87%BD%E6%95%B0%EF%BC%88setter%EF%BC%89)
-6.  [属性表达式](https://es6.ruanyifeng.com/#docs/class#%E5%B1%9E%E6%80%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F)
-7.  [Class 表达式](https://es6.ruanyifeng.com/#docs/class#Class%20%E8%A1%A8%E8%BE%BE%E5%BC%8F)
-8.  [静态方法](https://es6.ruanyifeng.com/#docs/class#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95)
-9.  [静态属性](https://es6.ruanyifeng.com/#docs/class#%E9%9D%99%E6%80%81%E5%B1%9E%E6%80%A7)
+1. [类的由来](https://es6.ruanyifeng.com/#docs/class#%E7%B1%BB%E7%9A%84%E7%94%B1%E6%9D%A5)
+2. [constructor() 方法](<https://es6.ruanyifeng.com/#docs/class#constructor()%20%E6%96%B9%E6%B3%95 $
+3. [类的实例](https://es6.ruanyifeng.com/#docs/class#%E7%B1%BB%E7%9A%84%E5%AE%9E%E4%BE%8B)
+4. [实例属性的新写法](https://es6.ruanyifeng.com/#docs/class#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7%E7%9A%84%E6%96%B0%E5%86%99%E6%B3%95)
+5. [取值函数（getter）和存值函数（setter）](https://es6.ruanyifeng.com/#docs/class#%E5%8F%96%E5%80%BC%E5%87%BD%E6%95%B0%EF%BC%88getter%EF%BC%89%E5%92%8C%E5%AD%98%E5%80%BC%E5%87%BD%E6%95%B0%EF%BC%88setter%EF%BC%89)
+6. [属性表达式](https://es6.ruanyifeng.com/#docs/class#%E5%B1%9E%E6%80%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+7. [Class 表达式](https://es6.ruanyifeng.com/#docs/class#Class%20%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+8. [静态方法](https://es6.ruanyifeng.com/#docs/class#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95)
+9. [静态属性](https://es6.ruanyifeng.com/#docs/class#%E9%9D%99%E6%80%81%E5%B1%9E%E6%80%A7)
 10. [私有方法和私有属性](https://es6.ruanyifeng.com/#docs/class#%E7%A7%81%E6%9C%89%E6%96%B9%E6%B3%95%E5%92%8C%E7%A7%81%E6%9C%89%E5%B1%9E%E6%80%A7)
 11. [静态块](https://es6.ruanyifeng.com/#docs/class#%E9%9D%99%E6%80%81%E5%9D%97)
 12. [类的注意点](https://es6.ruanyifeng.com/#docs/class#%E7%B1%BB%E7%9A%84%E6%B3%A8%E6%84%8F%E7%82%B9)
@@ -777,17 +777,17 @@ class Counter {
 
 上面代码中，`#x`是一个私有属性，它的读写都通过`get #x()`和\`set
 
-## x()`操作另一个私有属性`#xValue\`来完成。
+## x()`操作另一个私有属性`#xValue\`来完成
 
-1.  [类的由来](https://es6.ruanyifeng.com/#docs/class#%E7%B1%BB%E7%9A%84%E7%94%B1%E6%9D%A5)
-2.  [constructor() 方法](<https://es6.ruanyifeng.com/#docs/class#constructor()%20%E6%96%B9%E6%B3%95>)
-3.  [类的实例](https://es6.ruanyifeng.com/#docs/class#%E7%B1%BB%E7%9A%84%E5%AE%9E%E4%BE%8B)
-4.  [实例属性的新写法](https://es6.ruanyifeng.com/#docs/class#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7%E7%9A%84%E6%96%B0%E5%86%99%E6%B3%95)
-5.  [取值函数（getter）和存值函数（setter）](https://es6.ruanyifeng.com/#docs/class#%E5%8F%96%E5%80%BC%E5%87%BD%E6%95%B0%EF%BC%88getter%EF%BC%89%E5%92%8C%E5%AD%98%E5%80%BC%E5%87%BD%E6%95%B0%EF%BC%88setter%EF%BC%89)
-6.  [属性表达式](https://es6.ruanyifeng.com/#docs/class#%E5%B1%9E%E6%80%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F)
-7.  [Class 表达式](https://es6.ruanyifeng.com/#docs/class#Class%20%E8%A1%A8%E8%BE%BE%E5%BC%8F)
-8.  [静态方法](https://es6.ruanyifeng.com/#docs/class#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95)
-9.  [静态属性](https://es6.ruanyifeng.com/#docs/class#%E9%9D%99%E6%80%81%E5%B1%9E%E6%80%A7)
+1. [类的由来](https://es6.ruanyifeng.com/#docs/class#%E7%B1%BB%E7%9A%84%E7%94%B1%E6%9D%A5)
+2. [constructor() 方法](<https://es6.ruanyifeng.com/#docs/class#constructor()%20%E6%96%B9%E6%B3%95 $
+3. [类的实例](https://es6.ruanyifeng.com/#docs/class#%E7%B1%BB%E7%9A%84%E5%AE%9E%E4%BE%8B)
+4. [实例属性的新写法](https://es6.ruanyifeng.com/#docs/class#%E5%AE%9E%E4%BE%8B%E5%B1%9E%E6%80%A7%E7%9A%84%E6%96%B0%E5%86%99%E6%B3%95)
+5. [取值函数（getter）和存值函数（setter）](https://es6.ruanyifeng.com/#docs/class#%E5%8F%96%E5%80%BC%E5%87%BD%E6%95%B0%EF%BC%88getter%EF%BC%89%E5%92%8C%E5%AD%98%E5%80%BC%E5%87%BD%E6%95%B0%EF%BC%88setter%EF%BC%89)
+6. [属性表达式](https://es6.ruanyifeng.com/#docs/class#%E5%B1%9E%E6%80%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+7. [Class 表达式](https://es6.ruanyifeng.com/#docs/class#Class%20%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+8. [静态方法](https://es6.ruanyifeng.com/#docs/class#%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95)
+9. [静态属性](https://es6.ruanyifeng.com/#docs/class#%E9%9D%99%E6%80%81%E5%B1%9E%E6%80%A7)
 10. [私有方法和私有属性](https://es6.ruanyifeng.com/#docs/class#%E7%A7%81%E6%9C%89%E6%96%B9%E6%B3%95%E5%92%8C%E7%A7%81%E6%9C%89%E5%B1%9E%E6%80%A7)
 11. [静态块](https://es6.ruanyifeng.com/#docs/class#%E9%9D%99%E6%80%81%E5%9D%97)
 12. [类的注意点](https://es6.ruanyifeng.com/#docs/class#%E7%B1%BB%E7%9A%84%E6%B3%A8%E6%84%8F%E7%82%B9)

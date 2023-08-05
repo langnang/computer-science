@@ -89,13 +89,13 @@ array:  [1] [2] [3] [4] [5] [6] [7] [8] [9] [0]
 
 ### 时间复杂度
 
-- 最好时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(n)>)
-- 最坏时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(n^{2})>)
-- 平均时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(n^{2})>)
+- 最好时间复杂度 $ O(n) $
+- 最坏时间复杂度 $ O(n^{2}) $
+- 平均时间复杂度 $ O(n^{2}) $
 
 ### 空间复杂度
 
-- 平均空间复杂度 ![](<https://latex.codecogs.com/png.latex?O(1)>)
+- 平均空间复杂度 $ O(1) $
 
 ### 稳定性
 

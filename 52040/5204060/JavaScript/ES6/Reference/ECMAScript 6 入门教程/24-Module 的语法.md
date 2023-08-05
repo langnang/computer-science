@@ -1,15 +1,15 @@
 # Class 的继承
 
-1.  [概述](https://es6.ruanyifeng.com/#docs/module#%E6%A6%82%E8%BF%B0)
-2.  [严格模式](https://es6.ruanyifeng.com/#docs/module#%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F)
-3.  [export 命令](https://es6.ruanyifeng.com/#docs/module#export%20%E5%91%BD%E4%BB%A4)
-4.  [import 命令](https://es6.ruanyifeng.com/#docs/module#import%20%E5%91%BD%E4%BB%A4)
-5.  [模块的整体加载](https://es6.ruanyifeng.com/#docs/module#%E6%A8%A1%E5%9D%97%E7%9A%84%E6%95%B4%E4%BD%93%E5%8A%A0%E8%BD%BD)
-6.  [export default 命令](https://es6.ruanyifeng.com/#docs/module#export%20default%20%E5%91%BD%E4%BB%A4)
-7.  [export 与 import 的复合写法](https://es6.ruanyifeng.com/#docs/module#export%20%E4%B8%8E%20import%20%E7%9A%84%E5%A4%8D%E5%90%88%E5%86%99%E6%B3%95)
-8.  [模块的继承](https://es6.ruanyifeng.com/#docs/module#%E6%A8%A1%E5%9D%97%E7%9A%84%E7%BB%A7%E6%89%BF)
-9.  [跨模块常量](https://es6.ruanyifeng.com/#docs/module#%E8%B7%A8%E6%A8%A1%E5%9D%97%E5%B8%B8%E9%87%8F)
-10. [import()](<https://es6.ruanyifeng.com/#docs/module#import()>)
+1. [概述](https://es6.ruanyifeng.com/#docs/module#%E6%A6%82%E8%BF%B0)
+2. [严格模式](https://es6.ruanyifeng.com/#docs/module#%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F)
+3. [export 命令](https://es6.ruanyifeng.com/#docs/module#export%20%E5%91%BD%E4%BB%A4)
+4. [import 命令](https://es6.ruanyifeng.com/#docs/module#import%20%E5%91%BD%E4%BB%A4)
+5. [模块的整体加载](https://es6.ruanyifeng.com/#docs/module#%E6%A8%A1%E5%9D%97%E7%9A%84%E6%95%B4%E4%BD%93%E5%8A%A0%E8%BD%BD)
+6. [export default 命令](https://es6.ruanyifeng.com/#docs/module#export%20default%20%E5%91%BD%E4%BB%A4)
+7. [export 与 import 的复合写法](https://es6.ruanyifeng.com/#docs/module#export%20%E4%B8%8E%20import%20%E7%9A%84%E5%A4%8D%E5%90%88%E5%86%99%E6%B3%95)
+8. [模块的继承](https://es6.ruanyifeng.com/#docs/module#%E6%A8%A1%E5%9D%97%E7%9A%84%E7%BB%A7%E6%89%BF)
+9. [跨模块常量](https://es6.ruanyifeng.com/#docs/module#%E8%B7%A8%E6%A8%A1%E5%9D%97%E5%B8%B8%E9%87%8F)
+10. [import()](<https://es6.ruanyifeng.com/#docs/module#import() $
 
 ## 概述
 

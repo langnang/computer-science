@@ -21,8 +21,8 @@
 
 ### 时间复杂度
 
-- 最好时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(nlog^{2}n)>)
-- 最坏时间复杂度 ![](<https://latex.codecogs.com/png.latex?O(nlog^{2}n)>)
+- 最好时间复杂度 $ O(nlog^{2}n) $
+- 最坏时间复杂度 $ O(nlog^{2}n) $
 - 平均时间复杂度 O(nlog2n)
 
 ### 空间复杂度

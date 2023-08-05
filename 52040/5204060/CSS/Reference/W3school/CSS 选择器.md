@@ -34,7 +34,7 @@ author: w3school.com.cn
 | [`[attribute_]`](https://www.w3school.com.cn/cssref/selector_attribute.asp) | `[target]`              | 选择带有 target 属性的所有元素。                       |
 | [`[attribute=value]`](https://www.w3school.com.cn/cssref/selector_attribute_value.asp) | `[target=_blank]`       | 选择带有 target="\_blank" 属性的所有元素。             |
 | [`[attribute~=value]`](https://www.w3school.com.cn/cssref/selector_attribute_value_contain.asp) | `[title~=flower]`       | 选择 title 属性包含单词 "flower" 的所有元素。          |
-| [`[attribute|=value]`](<https://www.w3school.com.cn/cssref/selector_attribute_value_start.asp>) | `[lang|=en]`            | 选择 lang 属性值以 "en" 开头的所有元素。               |
+| [`[attribute|=value]`](<https://www.w3school.com.cn/cssref/selector_attribute_value_start.asp $ | `[lang|=en]`            | 选择 lang 属性值以 "en" 开头的所有元素。               |
 | [`[attribute^=value]`](https://www.w3school.com.cn/cssref/selector_attr_begin.asp) | `a[href^="https"]`      | 选择其 src 属性值以 "https" 开头的每个 `<a>` 元素。    |
 | [`[attribute$=value]`](https://www.w3school.com.cn/cssref/selector_attr_end.asp) | `a[href$=".pdf"]`       | 选择其 src 属性以 ".pdf" 结尾的所有 `<a>` 元素。       |
 | [`[attribute*=value]`](https://www.w3school.com.cn/cssref/selector_attr_contain.asp) | `a[href*="w3schools"]`  | 选择其 href 属性值中包含 "abc" 子串的每个 `<a>` 元素。 |

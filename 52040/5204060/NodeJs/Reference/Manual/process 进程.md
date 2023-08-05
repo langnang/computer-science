@@ -8,6 +8,7 @@ author:
 # process 进程 | Node.js API 文档
 
 > ## Excerpt
+>
 > 中英对照
 
 ---
@@ -72,12 +73,12 @@ console.log('This message is displayed first.');
 
 新增于: v0.1.7
 
--   `code` [<integer>](http://url.nodejs.cn/SXbo1v)
+- `code` [<integer>](http://url.nodejs.cn/SXbo1v)
 
 当 Node.js 进程由于以下任一原因即将退出时，则会触发 `'exit'` 事件：
 
--   `process.exit()` 方法被显式调用；
--   Node.js 事件循环不再需要执行任何额外的工作。
+- `process.exit()` 方法被显式调用；
+- Node.js 事件循环不再需要执行任何额外的工作。
 
 此时没有办法阻止事件循环的退出，一旦所有 `'exit'` 监听器都运行完毕，则 Node.js 进程将终止。
 
@@ -105,8 +106,8 @@ process.on('exit', (code) => {
 
 新增于: v0.5.10
 
--   `message` [<Object>](http://url.nodejs.cn/jzn6Ao) | [<boolean>](http://url.nodejs.cn/jFbvuT) | [<number>](http://url.nodejs.cn/SXbo1v) | [<string>](http://url.nodejs.cn/9Tw2bK) | [<null>](http://url.nodejs.cn/334hvC) 解析的 JSON 对象或可序列化的原始值。
--   `sendHandle` [<net.Server>](http://nodejs.cn/api/net.html#class-netserver) | [<net.Socket>](http://nodejs.cn/api/net.html#class-netsocket) [`net.Server`](http://nodejs.cn/api-v12/net.html#net_class_net_server) 或 [`net.Socket`](http://nodejs.cn/api-v12/net.html#net_class_net_socket) 对象、或未定义。
+- `message` [<Object>](http://url.nodejs.cn/jzn6Ao) | [<boolean>](http://url.nodejs.cn/jFbvuT) | [<number>](http://url.nodejs.cn/SXbo1v) | [<string>](http://url.nodejs.cn/9Tw2bK) | [<null>](http://url.nodejs.cn/334hvC) 解析的 JSON 对象或可序列化的原始值。
+- `sendHandle` [<net.Server>](http://nodejs.cn/api/net.html#class-netserver) | [<net.Socket>](http://nodejs.cn/api/net.html#class-netsocket) [`net.Server`](http://nodejs.cn/api-v12/net.html#net_class_net_server) 或 [`net.Socket`](http://nodejs.cn/api-v12/net.html#net_class_net_socket) 对象、或未定义。
 
 如果 Node.js 进程是使用 IPC 通道衍生（参见[子进程](http://nodejs.cn/api-v12/child_process.html)和[集群](http://nodejs.cn/api-v12/cluster.html)文档），则每当子进程收到父进程使用 [`childprocess.send()`](http://nodejs.cn/api-v12/child_process.html#child_process_subprocess_send_message_sendhandle_options_callback) 发送的消息时，就会触发 `'message'` 事件。
 
@@ -120,16 +121,16 @@ process.on('exit', (code) => {
 
 新增于: v10.12.0
 
--   `type` [<string>](http://url.nodejs.cn/9Tw2bK) 解决类型 `'resolve'` 或 `'reject'` 之一。
--   `promise` [<Promise>](http://url.nodejs.cn/ri1kj8) 不止一次解决或拒绝的 promise。
--   `value` [<any>](http://url.nodejs.cn/6sTGdS) 在原始解决之后解决或拒绝 promise 的值。
+- `type` [<string>](http://url.nodejs.cn/9Tw2bK) 解决类型 `'resolve'` 或 `'reject'` 之一。
+- `promise` [<Promise>](http://url.nodejs.cn/ri1kj8) 不止一次解决或拒绝的 promise。
+- `value` [<any>](http://url.nodejs.cn/6sTGdS) 在原始解决之后解决或拒绝 promise 的值。
 
 每当 `Promise` 满足以下任一条件时，就会触发 `'multipleResolves'` 事件：
 
--   解决了不止一次。
--   拒绝了不止一次。
--   解决后拒绝。
--   拒绝后解决。
+- 解决了不止一次。
+- 拒绝了不止一次。
+- 解决后拒绝。
+- 拒绝后解决。
 
 这对于在使用 `Promise` 构造函数时跟踪应用程序中的潜在错误很有用，因为多个解决被静默吞下。 但是，此事件的发生并不一定表示错误。 例如，[`Promise.race()`](http://url.nodejs.cn/AQtNpt) 可以触发 `'multipleResolves'` 事件。
 
@@ -155,7 +156,7 @@ main().then(console.log);
 // resolve: Promise { 'First call' } 'Swallowed resolve'
 // reject: Promise { 'First call' } Error: Swallowed reject
 //     at Promise (*)
-//     at new Promise (<anonymous>)
+//     at new Promise (<anonymous $
 //     at main (*)
 // First call
 ```
@@ -166,7 +167,7 @@ main().then(console.log);
 
 新增于: v1.4.1
 
--   `promise` [<Promise>](http://url.nodejs.cn/ri1kj8) 最近处理的 promise。
+- `promise` [<Promise>](http://url.nodejs.cn/ri1kj8) 最近处理的 promise。
 
 每当 `Promise` 被拒绝并且错误句柄被附加到它（例如使用 [`promise.catch()`](http://url.nodejs.cn/gMRBfK)）晚于一轮 Node.js 事件循环时，则 `'rejectionHandled'` 事件就会触发。
 
@@ -196,8 +197,8 @@ process.on('rejectionHandled', (promise) => {
 
 [中英对照](http://nodejs.cn/api-v12/process/event_uncaughtexception.html)
 
--   `err` [<Error>](http://url.nodejs.cn/qZ873x) 未捕获的异常。
--   `origin` [<string>](http://url.nodejs.cn/9Tw2bK) 指示异常是源自未处理的拒绝还是源自同步错误。 可以是 `'uncaughtException'` 或 `'unhandledRejection'`。
+- `err` [<Error>](http://url.nodejs.cn/qZ873x) 未捕获的异常。
+- `origin` [<string>](http://url.nodejs.cn/9Tw2bK) 指示异常是源自未处理的拒绝还是源自同步错误。 可以是 `'uncaughtException'` 或 `'unhandledRejection'`。
 
 当未捕获的 JavaScript 异常一直冒泡回到事件循环时，则会触发 `'uncaughtException'` 事件。 默认情况下，Node.js 通过将堆栈跟踪打印到 `stderr` 并以代码 1 退出，覆盖任何先前设置的 [`process.exitCode`](http://nodejs.cn/api-v12/process.html#process_process_exitcode) 来处理此类异常。 为 `'uncaughtException'` 事件添加句柄会覆盖此默认行为。 或者，更改 `'uncaughtException'` 处理程序中的 [`process.exitCode`](http://nodejs.cn/api-v12/process.html#process_process_exitcode)，这将导致进程以提供的退出码退出。 否则，在存在此类句柄的情况下，进程将以 0 退出。
 
@@ -241,8 +242,8 @@ console.log('This will not run.');
 
 新增于: v12.17.0
 
--   `err` [<Error>](http://url.nodejs.cn/qZ873x) 未捕获的异常。
--   `origin` [<string>](http://url.nodejs.cn/9Tw2bK) 指示异常是源自未处理的拒绝还是源自同步错误。 可以是 `'uncaughtException'` 或 `'unhandledRejection'`。
+- `err` [<Error>](http://url.nodejs.cn/qZ873x) 未捕获的异常。
+- `origin` [<string>](http://url.nodejs.cn/9Tw2bK) 指示异常是源自未处理的拒绝还是源自同步错误。 可以是 `'uncaughtException'` 或 `'unhandledRejection'`。
 
 `'uncaughtExceptionMonitor'` 事件在 `'uncaughtException'` 事件触发或通过 [`process.setUncaughtExceptionCaptureCallback()`](http://nodejs.cn/api-v12/process.html#process_process_setuncaughtexceptioncapturecallback_fn) 安装的钩子被调用之前触发。
 
@@ -262,8 +263,8 @@ nonexistentFunc();
 
 [中英对照](http://nodejs.cn/api-v12/process/event_unhandledrejection.html)
 
--   `reason` [<Error>](http://url.nodejs.cn/qZ873x) | [<any>](http://url.nodejs.cn/6sTGdS) Promise 被拒绝的对象（通常是 [`Error`](http://nodejs.cn/api-v12/errors.html#errors_class_error) 对象）。
--   `promise` [<Promise>](http://url.nodejs.cn/ri1kj8) 被拒绝的 promise。
+- `reason` [<Error>](http://url.nodejs.cn/qZ873x) | [<any>](http://url.nodejs.cn/6sTGdS) Promise 被拒绝的对象（通常是 [`Error`](http://nodejs.cn/api-v12/errors.html#errors_class_error) 对象）。
+- `promise` [<Promise>](http://url.nodejs.cn/ri1kj8) 被拒绝的 promise。
 
 每当 `Promise` 被拒绝并且在事件循环的一个轮询内没有错误句柄附加到承诺时，则会触发 `'unhandledRejection'` 事件。 使用 Promise 进行编程时，异常被封装为“被拒绝的 promise”。 拒绝可以使用 [`promise.catch()`](http://url.nodejs.cn/gMRBfK) 捕获和处理，并通过 `Promise` 链传播。 `'unhandledRejection'` 事件对于检测和跟踪尚未处理的被拒绝的 promise 很有用。
 
@@ -298,10 +299,10 @@ const resource = new SomeResource();
 
 新增于: v6.0.0
 
--   `warning` [<Error>](http://url.nodejs.cn/qZ873x) 警告的主要属性是：
-    -   `name` [<string>](http://url.nodejs.cn/9Tw2bK) 警告的名称。 **默认值:** `'Warning'`。
-    -   `message` [<string>](http://url.nodejs.cn/9Tw2bK) 系统提供的警告描述。
-    -   `stack` [<string>](http://url.nodejs.cn/9Tw2bK) 代码中发出警告的位置的堆栈跟踪。
+- `warning` [<Error>](http://url.nodejs.cn/qZ873x) 警告的主要属性是：
+  - `name` [<string>](http://url.nodejs.cn/9Tw2bK) 警告的名称。 **默认值:** `'Warning'`。
+  - `message` [<string>](http://url.nodejs.cn/9Tw2bK) 系统提供的警告描述。
+  - `stack` [<string>](http://url.nodejs.cn/9Tw2bK) 代码中发出警告的位置的堆栈跟踪。
 
 每当 Node.js 触发进程警告时，则会触发 `'warning'` 事件。
 
@@ -376,34 +377,32 @@ process.on('SIGINT', handle);
 process.on('SIGTERM', handle);
 ```
 
--   `'SIGUSR1'` 由 Node.js 预留以启动[调试器](http://nodejs.cn/api-v12/debugger.html)。 可以安装监听器，但这样做可能会干扰调试器。
-    
--   `'SIGTERM'` 和 `'SIGINT'` 在非 Windows 平台上具有默认的句柄，其在使用代码 `128 + signal number` 退出之前重置终端模式。 如果这些信号之一安装了监听器，则其默认行为将被删除（Node.js 将不再退出）。
-    
--   `'SIGPIPE'` 默认情况下忽略。 它可以安装监听器。
-    
--   `'SIGHUP'` 在 Windows 上是在关闭控制台窗口时生成，在其他平台上是在各种类似条件下生成。 参见 [`signal(7)`](http://url.nodejs.cn/Fj3tfw)。 它可以安装监听器，但是 Node.js 将在大约 10 秒后被 Windows 无条件地终止。 在非 Windows 平台上，`SIGHUP` 的默认行为是终止 Node.js，但一旦安装了监听器，则其默认行为将被删除。
-    
--   `'SIGTERM'` Windows 上不支持，可以监听。
-    
--   所有平台都支持来自终端的 `'SIGINT'`，通常可以使用 Ctrl+C 生成（但是这是可配置的）。 当启用[终端原始模式](http://nodejs.cn/api-v12/tty.html#tty_readstream_setrawmode_mode)并使用 Ctrl+C 时不会生成它。
-    
--   `'SIGBREAK'` 在 Windows 上，当按下 Ctrl+Break 时会发送。 在非 Windows 平台上，它可以被监听，但无法发送或生成它。
-    
--   `'SIGWINCH'` 当调整控制台大小时会发送。 在 Windows 上，这只会发生在当光标移动时写入控制台，或者当在原始模式下使用可读的终端时。
-    
--   `'SIGKILL'` 不能安装监听器，它会无条件地终止所有平台上的 Node.js。
-    
--   `'SIGSTOP'` 不能安装监听器。
-    
+- `'SIGUSR1'` 由 Node.js 预留以启动[调试器](http://nodejs.cn/api-v12/debugger.html)。 可以安装监听器，但这样做可能会干扰调试器。
 
--   `0` 可以发送来测试进程是否存在，如果进程存在则没影响，如果进程不存在则抛出错误。
-    
+- `'SIGTERM'` 和 `'SIGINT'` 在非 Windows 平台上具有默认的句柄，其在使用代码 `128 + signal number` 退出之前重置终端模式。 如果这些信号之一安装了监听器，则其默认行为将被删除（Node.js 将不再退出）。
+
+- `'SIGPIPE'` 默认情况下忽略。 它可以安装监听器。
+
+- `'SIGHUP'` 在 Windows 上是在关闭控制台窗口时生成，在其他平台上是在各种类似条件下生成。 参见 [`signal(7)`](http://url.nodejs.cn/Fj3tfw)。 它可以安装监听器，但是 Node.js 将在大约 10 秒后被 Windows 无条件地终止。 在非 Windows 平台上，`SIGHUP` 的默认行为是终止 Node.js，但一旦安装了监听器，则其默认行为将被删除。
+
+- `'SIGTERM'` Windows 上不支持，可以监听。
+
+- 所有平台都支持来自终端的 `'SIGINT'`，通常可以使用 Ctrl+C 生成（但是这是可配置的）。 当启用[终端原始模式](http://nodejs.cn/api-v12/tty.html#tty_readstream_setrawmode_mode)并使用 Ctrl+C 时不会生成它。
+
+- `'SIGBREAK'` 在 Windows 上，当按下 Ctrl+Break 时会发送。 在非 Windows 平台上，它可以被监听，但无法发送或生成它。
+
+- `'SIGWINCH'` 当调整控制台大小时会发送。 在 Windows 上，这只会发生在当光标移动时写入控制台，或者当在原始模式下使用可读的终端时。
+
+- `'SIGKILL'` 不能安装监听器，它会无条件地终止所有平台上的 Node.js。
+
+- `'SIGSTOP'` 不能安装监听器。
+
+- `0` 可以发送来测试进程是否存在，如果进程存在则没影响，如果进程不存在则抛出错误。
 
 Windows 不支持信号，因此没有等价的使用信号来终止，但 Node.js 提供了一些对 [`process.kill()`](http://nodejs.cn/api-v12/process.html#process_process_kill_pid_signal) 和 [`subprocess.kill()`](http://nodejs.cn/api-v12/child_process.html#child_process_subprocess_kill_signal) 的模拟：
 
--   发送 `SIGINT`、`SIGTERM`、和 `SIGKILL` 会导致目标进程无条件的终止，之后子进程会报告进程被信号终止。
--   发送信号 `0` 可以作为独立于平台的方式来测试进程是否存在。
+- 发送 `SIGINT`、`SIGTERM`、和 `SIGKILL` 会导致目标进程无条件的终止，之后子进程会报告进程被信号终止。
+- 发送信号 `0` 可以作为独立于平台的方式来测试进程是否存在。
 
 ### `process.abort()`[#](http://nodejs.cn/api-v12/process.html#processabort)
 
@@ -421,16 +420,16 @@ Windows 不支持信号，因此没有等价的使用信号来终止，但 Node.
 
 新增于: v10.10.0
 
--   [<Set>](http://url.nodejs.cn/yej4PC)
+- [<Set>](http://url.nodejs.cn/yej4PC)
 
 `process.allowedNodeEnvironmentFlags` 属性是 [`NODE_OPTIONS`](http://nodejs.cn/api-v12/cli.html#cli_node_options_options) 环境变量中允许的特殊的只读 `Set` 标志。
 
 `process.allowedNodeEnvironmentFlags` 继承了 `Set`，但覆盖了 `Set.prototype.has` 以识别几种不同的可能标志表示。 在以下情况下，`process.allowedNodeEnvironmentFlags.has()` 将返回 `true`：
 
--   标志可以省略前导单（`-`）或双（`--`）破折号；例如，`inspect-brk` 代表 `--inspect-brk`，或 `r` 代表 `-r`。
--   传给 V8 的标志（如 `--v8-options` 中所列）可能会替换一个或多个_非前导_破折号作为下划线，反之亦然；例如，`--perf_basic_prof`、`--perf-basic-prof`、`--perf_basic-prof` 等。
--   标志可能包含一个或多个等于 (`=`) 字符；在第一个等号之后并包括在内的所有字符都将被忽略；例如，`--stack-trace-limit=100`。
--   标志_必须_在 [`NODE_OPTIONS`](http://nodejs.cn/api-v12/cli.html#cli_node_options_options) 中是允许的。
+- 标志可以省略前导单（`-`）或双（`--`）破折号；例如，`inspect-brk` 代表 `--inspect-brk`，或 `r` 代表 `-r`。
+- 传给 V8 的标志（如 `--v8-options` 中所列）可能会替换一个或多个_非前导_破折号作为下划线，反之亦然；例如，`--perf_basic_prof`、`--perf-basic-prof`、`--perf_basic-prof` 等。
+- 标志可能包含一个或多个等于 (`=`) 字符；在第一个等号之后并包括在内的所有字符都将被忽略；例如，`--stack-trace-limit=100`。
+- 标志_必须_在 [`NODE_OPTIONS`](http://nodejs.cn/api-v12/cli.html#cli_node_options_options) 中是允许的。
 
 在 `process.allowedNodeEnvironmentFlags` 上迭代时，标志只会出现_一次_；每个都以一个或多个破折号开头。 传给 V8 的标志将包含下划线而不是非前导破折号：
 
@@ -453,7 +452,7 @@ process.allowedNodeEnvironmentFlags.forEach((flag) => {
 
 新增于: v0.5.0
 
--   [<string>](http://url.nodejs.cn/9Tw2bK)
+- [<string>](http://url.nodejs.cn/9Tw2bK)
 
 为其编译 Node.js 二进制文件的操作系统 CPU 架构。 可能的值为：`'arm'`、`'arm64'`、`'ia32'`、`'mips'`、`'mipsel'`、`'ppc'`、`'ppc64'`、`'s390'`、`'s390x'`、`'x32'` 和 `'x64'`。
 
@@ -467,7 +466,7 @@ console.log(`This processor architecture is ${process.arch}`);
 
 新增于: v0.1.27
 
--   [<string\[\]>](http://url.nodejs.cn/9Tw2bK)
+- [<string\[\]>](http://url.nodejs.cn/9Tw2bK)
 
 第一个元素将是 [`process.execPath`](http://nodejs.cn/api-v12/process.html#process_process_execpath)。 如果需要访问 `argv[0]` 的原始值，请参阅 `process.argv0`。 第二个元素将是正在执行的 JavaScript 文件的路径。
 
@@ -483,7 +482,7 @@ process.argv.forEach((val, index) => {
 以如下方式启动 Node.js 进程：
 
 ```
-$ node process-args.js one two=three four
+node process-args.js one two=three four
 ```
 
 将生成输出：
@@ -502,7 +501,7 @@ $ node process-args.js one two=three four
 
 新增于: v6.4.0
 
--   [<string>](http://url.nodejs.cn/9Tw2bK)
+- [<string>](http://url.nodejs.cn/9Tw2bK)
 
 `process.argv0` 属性存储了 Node.js 启动时传入的 `argv[0]` 原始值的只读副本。
 
@@ -520,7 +519,7 @@ $ bash -c 'exec -a customArgv0 ./node'
 
 新增于: v7.1.0
 
--   [<Object>](http://url.nodejs.cn/jzn6Ao)
+- [<Object>](http://url.nodejs.cn/jzn6Ao)
 
 如果 Node.js 进程是使用 IPC 通道衍生（参见[子进程](http://nodejs.cn/api-v12/child_process.html)文档），则 `process.channel` 属性是对 IPC 通道的引用。 如果不存在 IPC 通道，则此属性为 `undefined`。
 
@@ -530,7 +529,7 @@ $ bash -c 'exec -a customArgv0 ./node'
 
 新增于: v0.1.17
 
--   `directory` [<string>](http://url.nodejs.cn/9Tw2bK)
+- `directory` [<string>](http://url.nodejs.cn/9Tw2bK)
 
 `process.chdir()` 方法更改 Node.js 进程的当前工作目录，如果失败则抛出异常（例如，如果指定的 `directory` 不存在）。
 
@@ -552,7 +551,7 @@ try {
 
 新增于: v0.7.7
 
--   [<Object>](http://url.nodejs.cn/jzn6Ao)
+- [<Object>](http://url.nodejs.cn/jzn6Ao)
 
 `process.config` 属性返回 `Object`，其中包含用于编译当前 Node.js 可执行文件的配置选项的 JavaScript 表示。 这与运行 `./configure` 脚本时生成的 `config.gypi` 文件相同。
 
@@ -594,7 +593,7 @@ try {
 
 新增于: v0.7.2
 
--   [<boolean>](http://url.nodejs.cn/jFbvuT)
+- [<boolean>](http://url.nodejs.cn/jFbvuT)
 
 如果 Node.js 进程使用 IPC 通道衍生（参见[子进程](http://nodejs.cn/api-v12/child_process.html)和[集群](http://nodejs.cn/api-v12/cluster.html)文档），则只要 IPC 通道连接，`process.connected` 属性将返回 `true`，并在调用 `process.disconnect()` 后返回 `false`。
 
@@ -606,10 +605,10 @@ try {
 
 新增于: v6.1.0
 
--   `previousValue` [<Object>](http://url.nodejs.cn/jzn6Ao) 先前调用 `process.cpuUsage()` 的返回值
--   返回: [<Object>](http://url.nodejs.cn/jzn6Ao)
-    -   `user` [<integer>](http://url.nodejs.cn/SXbo1v)
-    -   `system` [<integer>](http://url.nodejs.cn/SXbo1v)
+- `previousValue` [<Object>](http://url.nodejs.cn/jzn6Ao) 先前调用 `process.cpuUsage()` 的返回值
+- 返回: [<Object>](http://url.nodejs.cn/jzn6Ao)
+  - `user` [<integer>](http://url.nodejs.cn/SXbo1v)
+  - `system` [<integer>](http://url.nodejs.cn/SXbo1v)
 
 `process.cpuUsage()` 方法在具有属性 `user` 和 `system` 的对象中返回当前进程的用户和系统 CPU 时间使用情况，其值为微秒值（百万分之一秒）。 这些值分别测量在用户和系统代码中花费的时间，如果多个 CPU 内核为此进程执行工作，则最终可能会大于实际经过的时间。
 
@@ -633,7 +632,7 @@ console.log(process.cpuUsage(startUsage));
 
 新增于: v0.1.8
 
--   返回: [<string>](http://url.nodejs.cn/9Tw2bK)
+- 返回: [<string>](http://url.nodejs.cn/9Tw2bK)
 
 `process.cwd()` 方法返回 Node.js 进程的当前工作目录。
 
@@ -647,7 +646,7 @@ console.log(`Current directory: ${process.cwd()}`);
 
 新增于: v0.7.2
 
--   [<number>](http://url.nodejs.cn/SXbo1v)
+- [<number>](http://url.nodejs.cn/SXbo1v)
 
 启用时 Node.js 调试器使用的端口。
 
@@ -671,9 +670,9 @@ process.debugPort = 5858;
 
 [中英对照](http://nodejs.cn/api-v12/process/process_dlopen_module_filename_flags.html)
 
--   `module` [<Object>](http://url.nodejs.cn/jzn6Ao)
--   `filename` [<string>](http://url.nodejs.cn/9Tw2bK)
--   `flags` [<os.constants.dlopen>](http://nodejs.cn/api/os.html#dlopen-constants) **默认值:** `os.constants.dlopen.RTLD_LAZY`
+- `module` [<Object>](http://url.nodejs.cn/jzn6Ao)
+- `filename` [<string>](http://url.nodejs.cn/9Tw2bK)
+- `flags` [<os.constants.dlopen>](http://nodejs.cn/api/os.html#dlopen-constants) **默认值:** `os.constants.dlopen.RTLD_LAZY`
 
 `require()` 主要用于加载 C++ 插件，除非特殊情况，否则不应直接使用。
 
@@ -694,12 +693,12 @@ module.exports.foo();
 
 新增于: v8.0.0
 
--   `warning` [<string>](http://url.nodejs.cn/9Tw2bK) | [<Error>](http://url.nodejs.cn/qZ873x) 要触发的警告。
--   `options` [<Object>](http://url.nodejs.cn/jzn6Ao)
-    -   `type` [<string>](http://url.nodejs.cn/9Tw2bK) 当 `warning` 是 `String` 时，`type` 是用于触发警告的 _type_ 的名称。 **默认值:** `'Warning'`。
-    -   `code` [<string>](http://url.nodejs.cn/9Tw2bK) 触发的警告实例的唯一标识符。
-    -   `ctor` [<Function>](http://url.nodejs.cn/ceTQa6) 当 `warning` 为 `String` 时，`ctor` 是可选函数，用于限制生成的堆栈跟踪。 **默认值:** `process.emitWarning`。
-    -   `detail` [<string>](http://url.nodejs.cn/9Tw2bK) 要包含在错误中的额外文本。
+- `warning` [<string>](http://url.nodejs.cn/9Tw2bK) | [<Error>](http://url.nodejs.cn/qZ873x) 要触发的警告。
+- `options` [<Object>](http://url.nodejs.cn/jzn6Ao)
+  - `type` [<string>](http://url.nodejs.cn/9Tw2bK) 当 `warning` 是 `String` 时，`type` 是用于触发警告的 _type_ 的名称。 **默认值:** `'Warning'`。
+  - `code` [<string>](http://url.nodejs.cn/9Tw2bK) 触发的警告实例的唯一标识符。
+  - `ctor` [<Function>](http://url.nodejs.cn/ceTQa6) 当 `warning` 为 `String` 时，`ctor` 是可选函数，用于限制生成的堆栈跟踪。 **默认值:** `process.emitWarning`。
+  - `detail` [<string>](http://url.nodejs.cn/9Tw2bK) 要包含在错误中的额外文本。
 
 `process.emitWarning()` 方法可用于触发自定义或特定于应用程序的进程警告。 这些可以通过向 [`'warning'`](http://nodejs.cn/api-v12/process.html#process_event_warning) 事件添加句柄来监听。
 
@@ -734,10 +733,10 @@ process.on('warning', (warning) => {
 
 新增于: v6.0.0
 
--   `warning` [<string>](http://url.nodejs.cn/9Tw2bK) | [<Error>](http://url.nodejs.cn/qZ873x) 要触发的警告。
--   `type` [<string>](http://url.nodejs.cn/9Tw2bK) 当 `warning` 是 `String` 时，`type` 是用于触发警告的 _type_ 的名称。 **默认值:** `'Warning'`。
--   `code` [<string>](http://url.nodejs.cn/9Tw2bK) 触发的警告实例的唯一标识符。
--   `ctor` [<Function>](http://url.nodejs.cn/ceTQa6) 当 `warning` 为 `String` 时，`ctor` 是可选函数，用于限制生成的堆栈跟踪。 **默认值:** `process.emitWarning`。
+- `warning` [<string>](http://url.nodejs.cn/9Tw2bK) | [<Error>](http://url.nodejs.cn/qZ873x) 要触发的警告。
+- `type` [<string>](http://url.nodejs.cn/9Tw2bK) 当 `warning` 是 `String` 时，`type` 是用于触发警告的 _type_ 的名称。 **默认值:** `'Warning'`。
+- `code` [<string>](http://url.nodejs.cn/9Tw2bK) 触发的警告实例的唯一标识符。
+- `ctor` [<Function>](http://url.nodejs.cn/ceTQa6) 当 `warning` 为 `String` 时，`ctor` 是可选函数，用于限制生成的堆栈跟踪。 **默认值:** `process.emitWarning`。
 
 `process.emitWarning()` 方法可用于触发自定义或特定于应用程序的进程警告。 这些可以通过向 [`'warning'`](http://nodejs.cn/api-v12/process.html#process_event_warning) 事件添加句柄来监听。
 
@@ -788,9 +787,9 @@ process.emitWarning(myWarning);
 
 如果警告 `type` 为 `'DeprecationWarning'`，则执行以下额外处理：
 
--   如果使用 `--throw-deprecation` 命令行标志，则弃用警告将作为异常抛出，而不是作为事件触发。
--   如果使用 `--no-deprecation` 命令行标志，则会取消弃用警告。
--   如果使用 `--trace-deprecation` 命令行标志，则弃用警告将与完整堆栈跟踪一起打印到 `stderr`。
+- 如果使用 `--throw-deprecation` 命令行标志，则弃用警告将作为异常抛出，而不是作为事件触发。
+- 如果使用 `--no-deprecation` 命令行标志，则会取消弃用警告。
+- 如果使用 `--trace-deprecation` 命令行标志，则弃用警告将与完整堆栈跟踪一起打印到 `stderr`。
 
 #### 避免重复警告[#](http://nodejs.cn/api-v12/process.html#avoiding-duplicate-warnings)
 
@@ -815,7 +814,7 @@ emitMyWarning();
 
 [中英对照](http://nodejs.cn/api-v12/process/process_env.html)
 
--   [<Object>](http://url.nodejs.cn/jzn6Ao)
+- [<Object>](http://url.nodejs.cn/jzn6Ao)
 
 `process.env` 属性返回包含用户环境的对象。 参见 [`environ(7)`](http://url.nodejs.cn/zvAzBK)。
 
@@ -839,7 +838,7 @@ emitMyWarning();
 可以修改此对象，但此类修改不会反映在 Node.js 进程之外，或反映到其他 [`Worker`](http://nodejs.cn/api-v12/worker_threads.html#worker_threads_class_worker) 线程（除非显示请求）。 换句话说，以下示例将不起作用：
 
 ```
-$ node -e 'process.env.foo = "bar"' && echo $foo
+node -e 'process.env.foo = "bar"' && echo $foo
 ```
 
 但是以下示例则将起作用：
@@ -885,12 +884,12 @@ console.log(process.env.test);
 
 新增于: v0.7.7
 
--   [<string\[\]>](http://url.nodejs.cn/9Tw2bK)
+- [<string\[\]>](http://url.nodejs.cn/9Tw2bK)
 
 `process.execArgv` 属性返回 Node.js 进程启动时传入的一组特定于 Node.js 的命令行选项。 这些选项不会出现在 [`process.argv`](http://nodejs.cn/api-v12/process.html#process_process_argv) 属性返回的数组中，也不包括 Node.js 可执行文件、脚本名称或脚本名称后面的任何选项。 这些选项可用于衍生与父进程具有相同执行环境的子进程。
 
 ```
-$ node --harmony script.js --version
+node --harmony script.js --version
 ```
 
 `process.execArgv` 的结果：
@@ -911,7 +910,7 @@ $ node --harmony script.js --version
 
 新增于: v0.1.100
 
--   [<string>](http://url.nodejs.cn/9Tw2bK)
+- [<string>](http://url.nodejs.cn/9Tw2bK)
 
 `process.execPath` 属性返回启动 Node.js 进程的可执行文件的绝对路径名。 符号链接（如果有）会被解析。
 
@@ -925,7 +924,7 @@ $ node --harmony script.js --version
 
 新增于: v0.1.13
 
--   `code` [<integer>](http://url.nodejs.cn/SXbo1v) 退出码。 **默认值:** `0`。
+- `code` [<integer>](http://url.nodejs.cn/SXbo1v) 退出码。 **默认值:** `0`。
 
 `process.exit()` 方法指示 Node.js 以 `code` 的退出状态同步终止进程。 如果省略 `code`，则退出将使用“成功”代码 `0` 或 `process.exitCode` 的值（如果已设置）。 直到所有 [`'exit'`](http://nodejs.cn/api-v12/process.html#process_event_exit) 事件监听器都被调用，Node.js 才会终止。
 
@@ -973,7 +972,7 @@ if (someConditionNotMet()) {
 
 新增于: v0.11.8
 
--   [<integer>](http://url.nodejs.cn/SXbo1v)
+- [<integer>](http://url.nodejs.cn/SXbo1v)
 
 当进程正常退出或通过 [`process.exit()`](http://nodejs.cn/api-v12/process.html#process_process_exit_code) 退出而不指定代码时，将作为进程退出码的数字。
 
@@ -1001,7 +1000,7 @@ if (process.getegid) {
 
 新增于: v2.0.0
 
--   返回: [<Object>](http://url.nodejs.cn/jzn6Ao)
+- 返回: [<Object>](http://url.nodejs.cn/jzn6Ao)
 
 `process.geteuid()` 方法返回进程的数字有效用户身份。 （见 [`geteuid(2)`](http://url.nodejs.cn/CipYot)。）
 
@@ -1019,7 +1018,7 @@ if (process.geteuid) {
 
 新增于: v0.1.31
 
--   返回: [<Object>](http://url.nodejs.cn/jzn6Ao)
+- 返回: [<Object>](http://url.nodejs.cn/jzn6Ao)
 
 `process.getgid()` 方法返回进程的数字群组标识。 （见 [`getgid(2)`](http://url.nodejs.cn/FMZrdA)。）
 
@@ -1037,7 +1036,7 @@ if (process.getgid) {
 
 新增于: v0.9.4
 
--   返回: [<integer\[\]>](http://url.nodejs.cn/SXbo1v)
+- 返回: [<integer\[\]>](http://url.nodejs.cn/SXbo1v)
 
 `process.getgroups()` 方法返回带有补充组 ID 的数组。 POSIX 不指定是否包含有效组 ID，但 Node.js 确保它始终包含。
 
@@ -1049,7 +1048,7 @@ if (process.getgid) {
 
 新增于: v0.1.28
 
--   返回: [<integer>](http://url.nodejs.cn/SXbo1v)
+- 返回: [<integer>](http://url.nodejs.cn/SXbo1v)
 
 `process.getuid()` 方法返回进程的数字用户标识。 （见 [`getuid(2)`](http://url.nodejs.cn/gReqig)。）
 
@@ -1067,7 +1066,7 @@ if (process.getuid) {
 
 新增于: v9.3.0
 
--   返回: [<boolean>](http://url.nodejs.cn/jFbvuT)
+- 返回: [<boolean>](http://url.nodejs.cn/jFbvuT)
 
 指示是否已使用 [`process.setUncaughtExceptionCaptureCallback()`](http://nodejs.cn/api-v12/process.html#process_process_setuncaughtexceptioncapturecallback_fn) 设置回调。
 
@@ -1077,8 +1076,8 @@ if (process.getuid) {
 
 新增于: v0.7.6
 
--   `time` [<integer\[\]>](http://url.nodejs.cn/SXbo1v) 先前调用 `process.hrtime()` 的结果
--   返回: [<integer\[\]>](http://url.nodejs.cn/SXbo1v)
+- `time` [<integer\[\]>](http://url.nodejs.cn/SXbo1v) 先前调用 `process.hrtime()` 的结果
+- 返回: [<integer\[\]>](http://url.nodejs.cn/SXbo1v)
 
 这是 [`process.hrtime.bigint()`](http://nodejs.cn/api-v12/process.html#process_process_hrtime_bigint) 在 JavaScript 中引入 `bigint` 之前的旧版本。
 
@@ -1108,7 +1107,7 @@ setTimeout(() => {
 
 新增于: v10.7.0
 
--   返回: [<bigint>](http://url.nodejs.cn/gJMq1y)
+- 返回: [<bigint>](http://url.nodejs.cn/gJMq1y)
 
 [`process.hrtime()`](http://nodejs.cn/api-v12/process.html#process_process_hrtime_time) 方法的 `bigint` 版本以纳秒为单位返回当前高解析度实时作为 `bigint`。
 
@@ -1133,8 +1132,8 @@ setTimeout(() => {
 
 新增于: v0.9.4
 
--   `user` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 用户名或数字标识符。
--   `extraGroup` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 群组名或数字标识符。
+- `user` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 用户名或数字标识符。
+- `extraGroup` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 群组名或数字标识符。
 
 `process.initgroups()` 方法读取 `/etc/group` 文件并使用用户所属的所有组初始化组访问列表。 这是一个特权操作，要求 Node.js 进程具有 `root` 访问权限或 `CAP_SETGID` 能力。
 
@@ -1156,8 +1155,8 @@ console.log(process.getgroups());         // [ 27, 30, 46, 1000 ]
 
 新增于: v0.0.6
 
--   `pid` [<number>](http://url.nodejs.cn/SXbo1v) 进程标识
--   `signal` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 要发送的信号，可以是字符串或数字。 **默认值:** `'SIGTERM'`。
+- `pid` [<number>](http://url.nodejs.cn/SXbo1v) 进程标识
+- `signal` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 要发送的信号，可以是字符串或数字。 **默认值:** `'SIGTERM'`。
 
 `process.kill()` 方法将 `signal` 发送到由 `pid` 标识的进程。
 
@@ -1188,7 +1187,7 @@ process.kill(process.pid, 'SIGHUP');
 
 新增于: v0.1.17
 
--   [<Object>](http://url.nodejs.cn/jzn6Ao)
+- [<Object>](http://url.nodejs.cn/jzn6Ao)
 
 `process.mainModule` 属性提供了另一种检索 [`require.main`](http://nodejs.cn/api-v12/modules.html#modules_accessing_the_main_module) 的方法。 不同之处在于，如果主模块在运行时发生更改，则 [`require.main`](http://nodejs.cn/api-v12/modules.html#modules_accessing_the_main_module) 可能仍会引用更改发生前所需模块中的原始主模块。 通常，可以安全地假设两者指的是同一个模块。
 
@@ -1198,12 +1197,12 @@ process.kill(process.pid, 'SIGHUP');
 
 [中英对照](http://nodejs.cn/api-v12/process/process_memoryusage.html)
 
--   返回: [<Object>](http://url.nodejs.cn/jzn6Ao)
-    -   `rss` [<integer>](http://url.nodejs.cn/SXbo1v)
-    -   `heapTotal` [<integer>](http://url.nodejs.cn/SXbo1v)
-    -   `heapUsed` [<integer>](http://url.nodejs.cn/SXbo1v)
-    -   `external` [<integer>](http://url.nodejs.cn/SXbo1v)
-    -   `arrayBuffers` [<integer>](http://url.nodejs.cn/SXbo1v)
+- 返回: [<Object>](http://url.nodejs.cn/jzn6Ao)
+  - `rss` [<integer>](http://url.nodejs.cn/SXbo1v)
+  - `heapTotal` [<integer>](http://url.nodejs.cn/SXbo1v)
+  - `heapUsed` [<integer>](http://url.nodejs.cn/SXbo1v)
+  - `external` [<integer>](http://url.nodejs.cn/SXbo1v)
+  - `arrayBuffers` [<integer>](http://url.nodejs.cn/SXbo1v)
 
 例如代码：
 
@@ -1221,10 +1220,10 @@ console.log(process.memoryUsage());
 }
 ```
 
--   `heapTotal` 和 `heapUsed` 指的是 V8 的内存使用量。
--   `external` 指的是绑定到 V8 管理的 JavaScript 对象的 C++ 对象的内存使用量。
--   `rss`，常驻集大小，是进程在主内存设备（即总分配内存的子集）中占用的空间量，包括所有 C++ 和 JavaScript 对象和代码。
--   `arrayBuffers` 是指为 `ArrayBuffer` 和 `SharedArrayBuffer` 分配的内存，包括所有 Node.js [`Buffer`](http://nodejs.cn/api-v12/buffer.html)。 这也包含在 `external` 值中。 当 Node.js 被用作嵌入式库时，此值可能为 `0`，因为在这种情况下可能不会跟踪 `ArrayBuffer` 的分配。
+- `heapTotal` 和 `heapUsed` 指的是 V8 的内存使用量。
+- `external` 指的是绑定到 V8 管理的 JavaScript 对象的 C++ 对象的内存使用量。
+- `rss`，常驻集大小，是进程在主内存设备（即总分配内存的子集）中占用的空间量，包括所有 C++ 和 JavaScript 对象和代码。
+- `arrayBuffers` 是指为 `ArrayBuffer` 和 `SharedArrayBuffer` 分配的内存，包括所有 Node.js [`Buffer`](http://nodejs.cn/api-v12/buffer.html)。 这也包含在 `external` 值中。 当 Node.js 被用作嵌入式库时，此值可能为 `0`，因为在这种情况下可能不会跟踪 `ArrayBuffer` 的分配。
 
 当使用 [`Worker`](http://nodejs.cn/api-v12/worker_threads.html#worker_threads_class_worker) 线程时，则 `rss` 将是对整个进程都有效的值，而其他字段仅涉及当前线程。
 
@@ -1232,8 +1231,8 @@ console.log(process.memoryUsage());
 
 [中英对照](http://nodejs.cn/api-v12/process/process_nexttick_callback_args.html)
 
--   `callback` [<Function>](http://url.nodejs.cn/ceTQa6)
--   `...args` [<any>](http://url.nodejs.cn/6sTGdS) 当调用 `callback` 时要传入的额外参数
+- `callback` [<Function>](http://url.nodejs.cn/ceTQa6)
+- `...args` [<any>](http://url.nodejs.cn/6sTGdS) 当调用 `callback` 时要传入的额外参数
 
 `process.nextTick()` 将 `callback` 添加到"下一个滴答队列"。 在 JavaScript 堆栈上的当前操作运行完成之后，且在允许事件循环继续之前，此队列将被完全排空。 如果递归地调用 `process.nextTick()`，则可能会创建无限的循环。 有关更多背景信息，请参阅[事件循环](http://url.nodejs.cn/BGNQY8)指南。
 
@@ -1313,7 +1312,7 @@ function definitelyAsync(arg, cb) {
 
 新增于: v0.8.0
 
--   [<boolean>](http://url.nodejs.cn/jFbvuT)
+- [<boolean>](http://url.nodejs.cn/jFbvuT)
 
 `process.noDeprecation` 属性指示是否在当前 Node.js 进程上设置了 `--no-deprecation` 标志。 有关此标志行为的更多信息，请参阅 [`'warning'` 事件](http://nodejs.cn/api-v12/process.html#process_event_warning)和 [`emitWarning()` 方法](http://nodejs.cn/api-v12/process.html#process_process_emitwarning_warning_type_code_ctor)的文档。
 
@@ -1323,7 +1322,7 @@ function definitelyAsync(arg, cb) {
 
 新增于: v0.1.15
 
--   [<integer>](http://url.nodejs.cn/SXbo1v)
+- [<integer>](http://url.nodejs.cn/SXbo1v)
 
 `process.pid` 属性返回进程的 PID。
 
@@ -1337,19 +1336,19 @@ console.log(`This process is pid ${process.pid}`);
 
 新增于: v0.1.16
 
--   [<string>](http://url.nodejs.cn/9Tw2bK)
+- [<string>](http://url.nodejs.cn/9Tw2bK)
 
 `process.platform` 属性返回标识运行 Node.js 进程的操作系统平台的字符串。
 
 目前可能的值是：
 
--   `'aix'`
--   `'darwin'`
--   `'freebsd'`
--   `'linux'`
--   `'openbsd'`
--   `'sunos'`
--   `'win32'`
+- `'aix'`
+- `'darwin'`
+- `'freebsd'`
+- `'linux'`
+- `'openbsd'`
+- `'sunos'`
+- `'win32'`
 
 ```
 console.log(`This platform is ${process.platform}`);
@@ -1363,7 +1362,7 @@ console.log(`This platform is ${process.platform}`);
 
 新增于: v9.2.0, v8.10.0, v6.13.0
 
--   [<integer>](http://url.nodejs.cn/SXbo1v)
+- [<integer>](http://url.nodejs.cn/SXbo1v)
 
 `process.ppid` 属性返回当前进程的父进程的 PID。
 
@@ -1375,24 +1374,23 @@ console.log(`The parent process is pid ${process.ppid}`);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_release.html)
 
--   [<Object>](http://url.nodejs.cn/jzn6Ao)
+- [<Object>](http://url.nodejs.cn/jzn6Ao)
 
 `process.release` 属性返回 `Object`，其中包含与当前版本相关的元数据，包括源 tarball 和 headers-only tarball 的网址。
 
 `process.release` 包含以下属性：
 
--   `name` [<string>](http://url.nodejs.cn/9Tw2bK)
-    
--   `sourceUrl` [<string>](http://url.nodejs.cn/9Tw2bK) 指向包含当前版本源代码的 _`.tar.gz`_ 文件的绝对网址。
-    
--   `headersUrl`[<string>](http://url.nodejs.cn/9Tw2bK) 指向 _`.tar.gz`_ 文件的绝对网址，该文件仅包含当前版本的源头文件。 该文件比完整的源文件小得多，可用于编译 Node.js 原生插件。
-    
--   `libUrl` [<string>](http://url.nodejs.cn/9Tw2bK) 指向与当前版本的体系结构和版本匹配的 _`node.lib`_ 文件的绝对网址。 此文件用于编译 Node.js 原生插件。 _此属性仅存在于 Windows 构建的 Node.js 中，在所有其他平台上将缺失。_
-    
--   `lts` [<string>](http://url.nodejs.cn/9Tw2bK) 标识此版本的 [LTS](http://url.nodejs.cn/vJCmGd) 标签的字符串标签。 此属性仅适用于 LTS 版本，对于所有其他版本类型（包括 _Current_ 版本）为 `undefined`。
-    
-    -   `'Dubnium'` 表示以 10.13.0 开头的 10.x LTS 行。
-    
+- `name` [<string>](http://url.nodejs.cn/9Tw2bK)
+
+- `sourceUrl` [<string>](http://url.nodejs.cn/9Tw2bK) 指向包含当前版本源代码的 _`.tar.gz`_ 文件的绝对网址。
+
+- `headersUrl`[<string>](http://url.nodejs.cn/9Tw2bK) 指向 _`.tar.gz`_ 文件的绝对网址，该文件仅包含当前版本的源头文件。 该文件比完整的源文件小得多，可用于编译 Node.js 原生插件。
+
+- `libUrl` [<string>](http://url.nodejs.cn/9Tw2bK) 指向与当前版本的体系结构和版本匹配的 _`node.lib`_ 文件的绝对网址。 此文件用于编译 Node.js 原生插件。 _此属性仅存在于 Windows 构建的 Node.js 中，在所有其他平台上将缺失。_
+
+- `lts` [<string>](http://url.nodejs.cn/9Tw2bK) 标识此版本的 [LTS](http://url.nodejs.cn/vJCmGd) 标签的字符串标签。 此属性仅适用于 LTS 版本，对于所有其他版本类型（包括 _Current_ 版本）为 `undefined`。
+
+  - `'Dubnium'` 表示以 10.13.0 开头的 10.x LTS 行。
 
 ```
 {
@@ -1410,7 +1408,7 @@ console.log(`The parent process is pid ${process.ppid}`);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_report.html)
 
--   [<Object>](http://url.nodejs.cn/jzn6Ao)
+- [<Object>](http://url.nodejs.cn/jzn6Ao)
 
 `process.report` 是一个对象，其方法用于为当前进程生成诊断报告。 [报告文档](http://nodejs.cn/api-v12/report.html)中提供了额外文档。
 
@@ -1420,7 +1418,7 @@ console.log(`The parent process is pid ${process.ppid}`);
 
 新增于: v12.17.0
 
--   [<boolean>](http://url.nodejs.cn/jFbvuT)
+- [<boolean>](http://url.nodejs.cn/jFbvuT)
 
 以紧凑的单行 JSON 格式编写报告，与专为人类使用而设计的默认多行格式相比，日志处理系统更易于使用。
 
@@ -1432,7 +1430,7 @@ console.log(`Reports are compact? ${process.report.compact}`);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_report_directory.html)
 
--   [<string>](http://url.nodejs.cn/9Tw2bK)
+- [<string>](http://url.nodejs.cn/9Tw2bK)
 
 写入报告的目录。 默认值为空字符串，表示将报告写入 Node.js 进程的当前工作目录。
 
@@ -1444,7 +1442,7 @@ console.log(`Report directory is ${process.report.directory}`);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_report_filename.html)
 
--   [<string>](http://url.nodejs.cn/9Tw2bK)
+- [<string>](http://url.nodejs.cn/9Tw2bK)
 
 写入报告的文件名。 如果设置为空字符串，则输出文件名将由时间戳、PID 和序列号组成。 默认值为空字符串。
 
@@ -1456,8 +1454,8 @@ console.log(`Report filename is ${process.report.filename}`);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_report_getreport_err.html)
 
--   `err` [<Error>](http://url.nodejs.cn/qZ873x) 用于报告 JavaScript 堆栈的自定义错误。
--   返回: [<Object>](http://url.nodejs.cn/jzn6Ao)
+- `err` [<Error>](http://url.nodejs.cn/qZ873x) 用于报告 JavaScript 堆栈的自定义错误。
+- 返回: [<Object>](http://url.nodejs.cn/jzn6Ao)
 
 返回正在运行的进程的诊断报告的 JavaScript 对象表示形式。 报告的 JavaScript 堆栈跟踪取自 `err`（如果存在）。
 
@@ -1478,7 +1476,7 @@ fs.writeFileSync(util.inspect(data), 'my-report.log', 'utf8');
 
 新增于: v11.12.0
 
--   [<boolean>](http://url.nodejs.cn/jFbvuT)
+- [<boolean>](http://url.nodejs.cn/jFbvuT)
 
 如果为 `true`，则会生成有关致命错误（例如内存不足错误或 C++ 断言失败）的诊断报告。
 
@@ -1490,7 +1488,7 @@ console.log(`Report on fatal error: ${process.report.reportOnFatalError}`);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_report_reportonsignal.html)
 
--   [<boolean>](http://url.nodejs.cn/jFbvuT)
+- [<boolean>](http://url.nodejs.cn/jFbvuT)
 
 如果为 `true`，则当进程接收到 `process.report.signal` 指定的信号时生成诊断报告。
 
@@ -1502,7 +1500,7 @@ console.log(`Report on signal: ${process.report.reportOnSignal}`);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_report_reportonuncaughtexception.html)
 
--   [<boolean>](http://url.nodejs.cn/jFbvuT)
+- [<boolean>](http://url.nodejs.cn/jFbvuT)
 
 如果为 `true`，则针对未捕获的异常生成诊断报告。
 
@@ -1514,7 +1512,7 @@ console.log(`Report on exception: ${process.report.reportOnUncaughtException}`);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_report_signal.html)
 
--   [<string>](http://url.nodejs.cn/9Tw2bK)
+- [<string>](http://url.nodejs.cn/9Tw2bK)
 
 用于触发诊断报告创建的信号。 默认为 `'SIGUSR2'`。
 
@@ -1526,12 +1524,11 @@ console.log(`Report signal: ${process.report.signal}`);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_report_writereport_filename_err.html)
 
--   `filename` [<string>](http://url.nodejs.cn/9Tw2bK) 写入报告的文件的名称。 这应该是相对路径，如果未指定，它将附加到 `process.report.directory` 中指定的目录或 Node.js 进程的当前工作目录。
-    
--   `err` [<Error>](http://url.nodejs.cn/qZ873x) 用于报告 JavaScript 堆栈的自定义错误。
-    
--   返回: [<string>](http://url.nodejs.cn/9Tw2bK) 返回生成的报告的文件名。
-    
+- `filename` [<string>](http://url.nodejs.cn/9Tw2bK) 写入报告的文件的名称。 这应该是相对路径，如果未指定，它将附加到 `process.report.directory` 中指定的目录或 Node.js 进程的当前工作目录。
+
+- `err` [<Error>](http://url.nodejs.cn/qZ873x) 用于报告 JavaScript 堆栈的自定义错误。
+
+- 返回: [<string>](http://url.nodejs.cn/9Tw2bK) 返回生成的报告的文件名。
 
 将诊断报告写入文件。 如果未提供 `filename`，则默认文件名包括日期、时间、PID 和序列号。 报告的 JavaScript 堆栈跟踪取自 `err`（如果存在）。
 
@@ -1547,23 +1544,23 @@ process.report.writeReport();
 
 新增于: v12.6.0
 
--   返回: [<Object>](http://url.nodejs.cn/jzn6Ao) 当前进程的资源使用情况。 所有这些值都来自返回 [`uv_rusage_t` struct](http://url.nodejs.cn/5NKtLD) 的 `uv_getrusage` 调用。
-    -   `userCPUTime` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到以微秒计算的 `ru_utime`。 它与 [`process.cpuUsage().user`](http://nodejs.cn/api-v12/process.html#process_process_cpuusage_previousvalue) 的值相同。
-    -   `systemCPUTime` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到以微秒计算的 `ru_stime`。 它与 [`process.cpuUsage().system`](http://nodejs.cn/api-v12/process.html#process_process_cpuusage_previousvalue) 的值相同。
-    -   `maxRSS` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_maxrss`，其以千字节为单位使用的最大驻留集大小。
-    -   `sharedMemorySize` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_ixrss` 但不受任何平台支持。
-    -   `unsharedDataSize` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_idrss` 但不受任何平台支持。
-    -   `unsharedStackSize` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_isrss` 但不受任何平台支持。
-    -   `minorPageFault` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_minflt`，这是进程的次要页面错误的数量，请参阅[这篇文章了解更多详情](http://url.nodejs.cn/iAo1sN)。
-    -   `majorPageFault` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_majflt`，这是进程的主要页面错误的数量，请参阅[这篇文章了解更多详情](http://url.nodejs.cn/pVskEm)。 Windows 不支持此字段。
-    -   `swappedOut` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_nswap` 但不受任何平台支持。
-    -   `fsRead` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_inblock`，这是文件系统必须执行输入的次数。
-    -   `fsWrite` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_oublock`，这是文件系统必须执行输出的次数。
-    -   `ipcSent` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_msgsnd` 但不受任何平台支持。
-    -   `ipcReceived` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_msgrcv` 但不受任何平台支持。
-    -   `signalsCount` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_nsignals` 但不受任何平台支持。
-    -   `voluntaryContextSwitches` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_nvcsw`，这是由于进程在其时间片完成之前自愿放弃处理器而导致 CPU 上下文切换的次数（通常是为了等待资源的可用性）。 Windows 不支持此字段。
-    -   `involuntaryContextSwitches` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_nivcsw`，这是由于更高优先级的进程变得可运行或当前进程超过其时间片而导致 CPU 上下文切换的次数。 Windows 不支持此字段。
+- 返回: [<Object>](http://url.nodejs.cn/jzn6Ao) 当前进程的资源使用情况。 所有这些值都来自返回 [`uv_rusage_t` struct](http://url.nodejs.cn/5NKtLD) 的 `uv_getrusage` 调用。
+  - `userCPUTime` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到以微秒计算的 `ru_utime`。 它与 [`process.cpuUsage().user`](http://nodejs.cn/api-v12/process.html#process_process_cpuusage_previousvalue) 的值相同。
+  - `systemCPUTime` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到以微秒计算的 `ru_stime`。 它与 [`process.cpuUsage().system`](http://nodejs.cn/api-v12/process.html#process_process_cpuusage_previousvalue) 的值相同。
+  - `maxRSS` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_maxrss`，其以千字节为单位使用的最大驻留集大小。
+  - `sharedMemorySize` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_ixrss` 但不受任何平台支持。
+  - `unsharedDataSize` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_idrss` 但不受任何平台支持。
+  - `unsharedStackSize` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_isrss` 但不受任何平台支持。
+  - `minorPageFault` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_minflt`，这是进程的次要页面错误的数量，请参阅[这篇文章了解更多详情](http://url.nodejs.cn/iAo1sN)。
+  - `majorPageFault` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_majflt`，这是进程的主要页面错误的数量，请参阅[这篇文章了解更多详情](http://url.nodejs.cn/pVskEm)。 Windows 不支持此字段。
+  - `swappedOut` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_nswap` 但不受任何平台支持。
+  - `fsRead` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_inblock`，这是文件系统必须执行输入的次数。
+  - `fsWrite` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_oublock`，这是文件系统必须执行输出的次数。
+  - `ipcSent` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_msgsnd` 但不受任何平台支持。
+  - `ipcReceived` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_msgrcv` 但不受任何平台支持。
+  - `signalsCount` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_nsignals` 但不受任何平台支持。
+  - `voluntaryContextSwitches` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_nvcsw`，这是由于进程在其时间片完成之前自愿放弃处理器而导致 CPU 上下文切换的次数（通常是为了等待资源的可用性）。 Windows 不支持此字段。
+  - `involuntaryContextSwitches` [<integer>](http://url.nodejs.cn/SXbo1v) 映射到 `ru_nivcsw`，这是由于更高优先级的进程变得可运行或当前进程超过其时间片而导致 CPU 上下文切换的次数。 Windows 不支持此字段。
 
 ```
 console.log(process.resourceUsage());
@@ -1596,12 +1593,12 @@ console.log(process.resourceUsage());
 
 新增于: v0.5.9
 
--   `message` [<Object>](http://url.nodejs.cn/jzn6Ao)
--   `sendHandle` [<net.Server>](http://nodejs.cn/api/net.html#class-netserver) | [<net.Socket>](http://nodejs.cn/api/net.html#class-netsocket)
--   `options` [<Object>](http://url.nodejs.cn/jzn6Ao) 用于参数化某些类型句柄的发送。`options` 支持以下属性：
-    -   `keepOpen` [<boolean>](http://url.nodejs.cn/jFbvuT) 当传入 `net.Socket` 实例时可以使用的值。 当为 `true` 时，套接字在发送过程中保持打开状态。 **默认值:** `false`。
--   `callback` [<Function>](http://url.nodejs.cn/ceTQa6)
--   返回: [<boolean>](http://url.nodejs.cn/jFbvuT)
+- `message` [<Object>](http://url.nodejs.cn/jzn6Ao)
+- `sendHandle` [<net.Server>](http://nodejs.cn/api/net.html#class-netserver) | [<net.Socket>](http://nodejs.cn/api/net.html#class-netsocket)
+- `options` [<Object>](http://url.nodejs.cn/jzn6Ao) 用于参数化某些类型句柄的发送。`options` 支持以下属性：
+  - `keepOpen` [<boolean>](http://url.nodejs.cn/jFbvuT) 当传入 `net.Socket` 实例时可以使用的值。 当为 `true` 时，套接字在发送过程中保持打开状态。 **默认值:** `false`。
+- `callback` [<Function>](http://url.nodejs.cn/ceTQa6)
+- 返回: [<boolean>](http://url.nodejs.cn/jFbvuT)
 
 如果使用 IPC 通道衍生 Node.js，则可以使用 `process.send()` 方法向父进程发送消息。 消息将作为父对象 [`ChildProcess`](http://nodejs.cn/api-v12/child_process.html#child_process_class_childprocess) 对象上的 [`'message'`](http://nodejs.cn/api-v12/child_process.html#child_process_event_message) 事件接收。
 
@@ -1615,7 +1612,7 @@ console.log(process.resourceUsage());
 
 新增于: v2.0.0
 
--   `id` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 群组名或 ID
+- `id` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 群组名或 ID
 
 `process.setegid()` 方法设置进程的有效群组标识。 （请参阅 [`setegid(2)`](http://url.nodejs.cn/nfmfWo)。）`id` 可以作为数字 ID 或群组名称字符串传入。 如果指定了群组名，则此方法在解析关联的数字 ID 时会阻塞。
 
@@ -1639,7 +1636,7 @@ if (process.getegid && process.setegid) {
 
 新增于: v2.0.0
 
--   `id` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 用户名或 ID
+- `id` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 用户名或 ID
 
 `process.seteuid()` 方法设置进程的有效用户身份。 （请参阅 [`seteuid(2)`](http://url.nodejs.cn/9nC26C)。） `id` 可以作为数字 ID 或用户名字符串传入。 如果指定了用户名，则该方法在解析关联的数字 ID 时会阻塞。
 
@@ -1663,7 +1660,7 @@ if (process.geteuid && process.seteuid) {
 
 新增于: v0.1.31
 
--   `id` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 群组名或 ID
+- `id` [<string>](http://url.nodejs.cn/9Tw2bK) | [<number>](http://url.nodejs.cn/SXbo1v) 群组名或 ID
 
 `process.setgid()` 方法设置进程的群组标识。 （请参阅 [`setgid(2)`](http://url.nodejs.cn/64HRVx)。）`id` 可以作为数字 ID 或群组名称字符串传入。 如果指定了群组名，则此方法在解析关联的数字 ID 时会阻塞。
 
@@ -1687,7 +1684,7 @@ if (process.getgid && process.setgid) {
 
 新增于: v0.9.4
 
--   `groups` [<integer\[\]>](http://url.nodejs.cn/SXbo1v)
+- `groups` [<integer\[\]>](http://url.nodejs.cn/SXbo1v)
 
 `process.setgroups()` 方法为 Node.js 进程设置补充群组 ID。 这是一个特权操作，需要 Node.js 进程具有 `root` 或 `CAP_SETGID` 能力。
 
@@ -1699,7 +1696,7 @@ if (process.getgid && process.setgid) {
 
 新增于: v0.1.28
 
--   `id` [<integer>](http://url.nodejs.cn/SXbo1v) | [<string>](http://url.nodejs.cn/9Tw2bK)
+- `id` [<integer>](http://url.nodejs.cn/SXbo1v) | [<string>](http://url.nodejs.cn/9Tw2bK)
 
 `process.setuid(id)` 方法设置进程的用户身份。 （请参阅 [`setuid(2)`](http://url.nodejs.cn/bUGgha)。） `id` 可以作为数字 ID 或用户名字符串传入。 如果指定了用户名，则该方法在解析关联的数字 ID 时会阻塞。
 
@@ -1723,7 +1720,7 @@ if (process.getuid && process.setuid) {
 
 新增于: v9.3.0
 
--   `fn` [<Function>](http://url.nodejs.cn/ceTQa6) | [<null>](http://url.nodejs.cn/334hvC)
+- `fn` [<Function>](http://url.nodejs.cn/ceTQa6) | [<null>](http://url.nodejs.cn/334hvC)
 
 `process.setUncaughtExceptionCaptureCallback()` 函数设置一个函数，当发生未捕获的异常时将调用该函数，该函数将接收异常值本身作为其第一个参数。
 
@@ -1737,7 +1734,7 @@ if (process.getuid && process.setuid) {
 
 [中英对照](http://nodejs.cn/api-v12/process/process_stderr.html)
 
--   [<Stream>](http://nodejs.cn/api/stream.html#stream)
+- [<Stream>](http://nodejs.cn/api/stream.html#stream)
 
 `process.stderr` 属性返回连接到 `stderr` (文件描述符 `2`) 的流。 它是 [`net.Socket`](http://nodejs.cn/api-v12/net.html#net_class_net_socket)（也就是 [Duplex](http://nodejs.cn/api-v12/stream.html#stream_duplex_and_transform_streams) 流），除非文件描述符 `2` 指向文件，在这种情况下它是 [Writable](http://nodejs.cn/api-v12/stream.html#stream_writable_streams) 流。
 
@@ -1747,7 +1744,7 @@ if (process.getuid && process.setuid) {
 
 [中英对照](http://nodejs.cn/api-v12/process/process_stderr_fd.html)
 
--   [<number>](http://url.nodejs.cn/SXbo1v)
+- [<number>](http://url.nodejs.cn/SXbo1v)
 
 该属性指的是 `process.stderr` 的底层文件描述符的值。 该值固定为 `2`。 在 [`Worker`](http://nodejs.cn/api-v12/worker_threads.html#worker_threads_class_worker) 线程中，该字段不存在。
 
@@ -1755,7 +1752,7 @@ if (process.getuid && process.setuid) {
 
 [中英对照](http://nodejs.cn/api-v12/process/process_stdin.html)
 
--   [<Stream>](http://nodejs.cn/api/stream.html#stream)
+- [<Stream>](http://nodejs.cn/api/stream.html#stream)
 
 `process.stdin` 属性返回连接到 `stdin` (文件描述符 `0`) 的流。 它是 [`net.Socket`](http://nodejs.cn/api-v12/net.html#net_class_net_socket)（也就是 [Duplex](http://nodejs.cn/api-v12/stream.html#stream_duplex_and_transform_streams) 流），除非文件描述符 `0` 指向文件，在这种情况下它是 [Readable](http://nodejs.cn/api-v12/stream.html#stream_readable_streams) 流。
 
@@ -1769,7 +1766,7 @@ if (process.getuid && process.setuid) {
 
 [中英对照](http://nodejs.cn/api-v12/process/process_stdin_fd.html)
 
--   [<number>](http://url.nodejs.cn/SXbo1v)
+- [<number>](http://url.nodejs.cn/SXbo1v)
 
 该属性指的是 `process.stdin` 的底层文件描述符的值。 该值固定为 `0`。 在 [`Worker`](http://nodejs.cn/api-v12/worker_threads.html#worker_threads_class_worker) 线程中，该字段不存在。
 
@@ -1777,7 +1774,7 @@ if (process.getuid && process.setuid) {
 
 [中英对照](http://nodejs.cn/api-v12/process/process_stdout.html)
 
--   [<Stream>](http://nodejs.cn/api/stream.html#stream)
+- [<Stream>](http://nodejs.cn/api/stream.html#stream)
 
 `process.stdout` 属性返回连接到 `stdout` (文件描述符 `1`) 的流。 它是 [`net.Socket`](http://nodejs.cn/api-v12/net.html#net_class_net_socket)（也就是 [Duplex](http://nodejs.cn/api-v12/stream.html#stream_duplex_and_transform_streams) 流），除非文件描述符 `1` 指向文件，在这种情况下它是 [Writable](http://nodejs.cn/api-v12/stream.html#stream_writable_streams) 流。
 
@@ -1793,7 +1790,7 @@ process.stdin.pipe(process.stdout);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_stdout_fd.html)
 
--   [<number>](http://url.nodejs.cn/SXbo1v)
+- [<number>](http://url.nodejs.cn/SXbo1v)
 
 该属性指的是 `process.stdout` 的底层文件描述符的值。 该值固定为 `1`。 在 [`Worker`](http://nodejs.cn/api-v12/worker_threads.html#worker_threads_class_worker) 线程中，该字段不存在。
 
@@ -1803,11 +1800,11 @@ process.stdin.pipe(process.stdout);
 
 `process.stdout` 和 `process.stderr` 在重要方面与其他 Node.js 流不同：
 
-1.  它们分别由 [`console.log()`](http://nodejs.cn/api-v12/console.html#console_console_log_data_args) 和 [`console.error()`](http://nodejs.cn/api-v12/console.html#console_console_error_data_args) 内部使用。
-2.  Writes may be synchronous depending on what the stream is connected to and whether the system is Windows or POSIX:
-    -   文件：在 Windows 和 POSIX 上是_同步的_
-    -   TTY（终端）: 在 Windows 上是_异步的_，在 POSIX 上是_同步的_
-    -   管道（和套接字）: 在 Windows 上是_同步的_，在 POSIX 上是_异步的_
+1. 它们分别由 [`console.log()`](http://nodejs.cn/api-v12/console.html#console_console_log_data_args) 和 [`console.error()`](http://nodejs.cn/api-v12/console.html#console_console_error_data_args) 内部使用。
+2. Writes may be synchronous depending on what the stream is connected to and whether the system is Windows or POSIX:
+    - 文件：在 Windows 和 POSIX 上是_同步的_
+    - TTY（终端）: 在 Windows 上是_异步的_，在 POSIX 上是_同步的_
+    - 管道（和套接字）: 在 Windows 上是_同步的_，在 POSIX 上是_异步的_
 
 这些行为部分是出于历史原因，因为更改它们会导致向后不兼容，但某些用户也期望它们。
 
@@ -1838,7 +1835,7 @@ false
 
 新增于: v0.9.12
 
--   [<boolean>](http://url.nodejs.cn/jFbvuT)
+- [<boolean>](http://url.nodejs.cn/jFbvuT)
 
 `process.throwDeprecation` 的初始值表示当前 Node.js 进程是否设置了 `--throw-deprecation` 标志。 `process.throwDeprecation` 是可变的，因此可能会在运行时更改弃用警告是否导致错误。 有关更多信息，请参阅 [`'warning'` 事件](http://nodejs.cn/api-v12/process.html#process_event_warning)和 [`emitWarning()` 方法](http://nodejs.cn/api-v12/process.html#process_process_emitwarning_warning_type_code_ctor)的文档。
 
@@ -1864,7 +1861,7 @@ Thrown:
 
 新增于: v0.1.104
 
--   [<string>](http://url.nodejs.cn/9Tw2bK)
+- [<string>](http://url.nodejs.cn/9Tw2bK)
 
 `process.title` 属性返回当前进程标题（即返回 `ps` 的当前值）。 为 `process.title` 分配一个新值会修改 `ps` 的当前值。
 
@@ -1880,7 +1877,7 @@ Node.js v0.8 通过覆盖 `environ` 内存允许更长的进程标题字符串�
 
 新增于: v0.8.0
 
--   [<boolean>](http://url.nodejs.cn/jFbvuT)
+- [<boolean>](http://url.nodejs.cn/jFbvuT)
 
 `process.traceDeprecation` 属性指示是否在当前 Node.js 进程上设置了 `--trace-deprecation` 标志。 有关此标志行为的更多信息，请参阅 [`'warning'` 事件](http://nodejs.cn/api-v12/process.html#process_event_warning)和 [`emitWarning()` 方法](http://nodejs.cn/api-v12/process.html#process_process_emitwarning_warning_type_code_ctor)的文档。
 
@@ -1898,7 +1895,7 @@ Node.js v0.8 通过覆盖 `environ` 内存允许更长的进程标题字符串�
 
 新增于: v0.1.19
 
--   `mask` [<string>](http://url.nodejs.cn/9Tw2bK) | [<integer>](http://url.nodejs.cn/SXbo1v)
+- `mask` [<string>](http://url.nodejs.cn/9Tw2bK) | [<integer>](http://url.nodejs.cn/SXbo1v)
 
 `process.umask(mask)` 设置 Node.js 进程的文件模式创建掩码。 子进程从父进程继承掩码。 返回上一个掩码。
 
@@ -1918,7 +1915,7 @@ console.log(
 
 新增于: v0.5.0
 
--   返回: [<number>](http://url.nodejs.cn/SXbo1v)
+- 返回: [<number>](http://url.nodejs.cn/SXbo1v)
 
 `process.uptime()` 方法返回当前 Node.js 进程已经运行的秒数。
 
@@ -1930,7 +1927,7 @@ console.log(
 
 新增于: v0.1.3
 
--   [<string>](http://url.nodejs.cn/9Tw2bK)
+- [<string>](http://url.nodejs.cn/9Tw2bK)
 
 `process.version` 属性包含 Node.js 版本字符串。
 
@@ -1945,7 +1942,7 @@ console.log(`Version: ${process.version}`);
 
 [中英对照](http://nodejs.cn/api-v12/process/process_versions.html)
 
--   [<Object>](http://url.nodejs.cn/jzn6Ao)
+- [<Object>](http://url.nodejs.cn/jzn6Ao)
 
 `process.versions` 属性返回对象，其中列出了 Node.js 的版本字符串及其依赖项。 `process.versions.modules` 表示当前的 ABI 版本，每当 C++ API 更改时都会增加。 Node.js 将拒绝加载针对不同模块 ABI 版本编译的模块。
 
@@ -1980,15 +1977,15 @@ console.log(process.versions);
 
 当没有更多异步操作挂起时，Node.js 通常会以 `0` 状态代码退出。 在其他情况下使用以下状态代码：
 
--   `1` **未捕获的致命异常**：存在未捕获的异常，并且其没有被域或 [`'uncaughtException'`](http://nodejs.cn/api-v12/process.html#process_event_uncaughtexception) 事件句柄处理。
--   `2`: 未使用（由 Bash 预留用于内置误用）
--   `3` **内部 JavaScript 解析错误**：Node.js 引导过程中的内部 JavaScript 源代码导致解析错误。 这是极其罕见的，通常只能在 Node.js 本身的开发过程中发生。
--   `4` **内部 JavaScript 评估失败**：Node.js 引导过程中的内部 JavaScript 源代码在评估时未能返回函数值。 这是极其罕见的，通常只能在 Node.js 本身的开发过程中发生。
--   `5` **致命错误**：V8 中存在不可恢复的致命错误。 通常将打印带有前缀 `FATAL ERROR` 的消息到标准错误。
--   `6` **非函数的内部异常句柄**：存在未捕获的异常，但内部致命异常句柄不知何故设置为非函数，无法调用。
--   `7` **内部异常句柄运行时失败**：存在未捕获的异常，并且内部致命异常句柄函数本身在尝试处理时抛出错误。 例如，如果 [`'uncaughtException'`](http://nodejs.cn/api-v12/process.html#process_event_uncaughtexception) 或 `domain.on('error')` 句柄抛出错误，就会发生这种情况。
--   `8`: 未使用。 在以前版本的 Node.js 中，退出码 8 有时表示未捕获的异常。
--   `9` **无效参数**：指定了未知选项，或者提供了需要值的选项而没有值。
--   `10` **内部 JavaScript 运行时失败**：Node.js 引导过程中的内部 JavaScript 源代码在调用引导函数时抛出错误。 这是极其罕见的，通常只能在 Node.js 本身的开发过程中发生。
--   `12` **无效的调试参数**：设置了 `--inspect` 和/或 `--inspect-brk` 选项，但选择的端口号无效或不可用。
--   `>128` **信号退出**：如果 Node.js 收到致命的信号，例如 `SIGKILL` 或 `SIGHUP`，则其退出码将是 `128` 加上信号代码的值。 这是标准的 POSIX 实践，因为退出码被定义为 7 位整数，并且信号退出设置高位，然后包含信号代码的值。 例如，信号 `SIGABRT` 的值是 `6`，因此预期的退出码将是 `128` + `6` 或 `134`。
+- `1` **未捕获的致命异常**：存在未捕获的异常，并且其没有被域或 [`'uncaughtException'`](http://nodejs.cn/api-v12/process.html#process_event_uncaughtexception) 事件句柄处理。
+- `2`: 未使用（由 Bash 预留用于内置误用）
+- `3` **内部 JavaScript 解析错误**：Node.js 引导过程中的内部 JavaScript 源代码导致解析错误。 这是极其罕见的，通常只能在 Node.js 本身的开发过程中发生。
+- `4` **内部 JavaScript 评估失败**：Node.js 引导过程中的内部 JavaScript 源代码在评估时未能返回函数值。 这是极其罕见的，通常只能在 Node.js 本身的开发过程中发生。
+- `5` **致命错误**：V8 中存在不可恢复的致命错误。 通常将打印带有前缀 `FATAL ERROR` 的消息到标准错误。
+- `6` **非函数的内部异常句柄**：存在未捕获的异常，但内部致命异常句柄不知何故设置为非函数，无法调用。
+- `7` **内部异常句柄运行时失败**：存在未捕获的异常，并且内部致命异常句柄函数本身在尝试处理时抛出错误。 例如，如果 [`'uncaughtException'`](http://nodejs.cn/api-v12/process.html#process_event_uncaughtexception) 或 `domain.on('error')` 句柄抛出错误，就会发生这种情况。
+- `8`: 未使用。 在以前版本的 Node.js 中，退出码 8 有时表示未捕获的异常。
+- `9` **无效参数**：指定了未知选项，或者提供了需要值的选项而没有值。
+- `10` **内部 JavaScript 运行时失败**：Node.js 引导过程中的内部 JavaScript 源代码在调用引导函数时抛出错误。 这是极其罕见的，通常只能在 Node.js 本身的开发过程中发生。
+- `12` **无效的调试参数**：设置了 `--inspect` 和/或 `--inspect-brk` 选项，但选择的端口号无效或不可用。
+- `>128` **信号退出**：如果 Node.js 收到致命的信号，例如 `SIGKILL` 或 `SIGHUP`，则其退出码将是 `128` 加上信号代码的值。 这是标准的 POSIX 实践，因为退出码被定义为 7 位整数，并且信号退出设置高位，然后包含信号代码的值。 例如，信号 `SIGABRT` 的值是 `6`，因此预期的退出码将是 `128` + `6` 或 `134`。

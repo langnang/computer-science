@@ -45,38 +45,34 @@
 
 因此，问题的规模越大，算法执行的时间的增长率与的增长率正相关，称作渐进时间复杂度（Asymptotic Time Complexity）。
 
-时间复杂度是描述算法运行的时间。我们把算法需要运算的次数用输入大小为 ![](https://latex.codecogs.com/png.latex?n) 的函数来表示，计作 ![](<https://latex.codecogs.com/png.latex?T(n)>)
-。时间复杂度通常用 ![](<https://latex.codecogs.com/png.latex?O(n)>) 来表示，公式为 ![](<https://latex.codecogs.com/png.latex?T(n)=O(f(n))>) ，其中
-![](<https://latex.codecogs.com/png.latex?f(n)>) 表示每行代码的执行次数之和，注意是执行次数。
+时间复杂度是描述算法运行的时间。我们把算法需要运算的次数用输入大小为 ![](https://latex.codecogs.com/png.latex?n) 的函数来表示，计作 $ T(n) $
+。时间复杂度通常用 $ O(n) $ 来表示，公式为 $ T(n)=O(f(n)) $ ，其中
+$ f(n) $ 表示每行代码的执行次数之和，注意是执行次数。
 
 **常见的时间复杂度**
 
 | 名称     | 运行时间                                               | 时间举例                                                      | 算法举例 |
 | -------- | ------------------------------------------------------ | ------------------------------------------------------------- | -------- |
-| 常数阶   | ![](<https://latex.codecogs.com/png.latex?O(1)>)       | ![](https://latex.codecogs.com/png.latex?12)                  | -        |
-| 线性阶   | ![](<https://latex.codecogs.com/png.latex?O(n)>)       | ![](https://latex.codecogs.com/png.latex?2n+3)                | -        |
-| 平方阶   | ![](<https://latex.codecogs.com/png.latex?O(n^{2})>)   | ![](https://latex.codecogs.com/png.latex?3^{2}+2n+1)          | -        |
-| 对数阶   | ![](<https://latex.codecogs.com/png.latex?O(log{n})>)  | ![](https://latex.codecogs.com/png.latex?5log_{2}n+20)        | -        |
-| nlogn 阶 | ![](<https://latex.codecogs.com/png.latex?O(nlog{n})>) | ![](https://latex.codecogs.com/png.latex?2n+3nlog_{2}n+19)    | -        |
-| 立方阶   | ![](<https://latex.codecogs.com/png.latex?O(n^{3})>)   | ![](https://latex.codecogs.com/png.latex?6n^{3}+3n^{2}+4n+10) | -        |
-| 指数阶   | ![](<https://latex.codecogs.com/png.latex?O(2^{n})>)   | ![](https://latex.codecogs.com/png.latex?2^{n})               | -        |
-| 阶乘     | ![](<https://latex.codecogs.com/png.latex?O(n!)>)      | ![](https://latex.codecogs.com/png.latex?n!)                  | -        |
+| 常数阶   | $ O(1) $       | ![](https://latex.codecogs.com/png.latex?12)                  | -        |
+| 线性阶   | $ O(n) $       | ![](https://latex.codecogs.com/png.latex?2n+3)                | -        |
+| 平方阶   | $ O(n^{2}) $   | ![](https://latex.codecogs.com/png.latex?3^{2}+2n+1)          | -        |
+| 对数阶   | $ O(log{n}) $  | ![](https://latex.codecogs.com/png.latex?5log_{2}n+20)        | -        |
+| nlogn 阶 | $ O(nlog{n}) $ | ![](https://latex.codecogs.com/png.latex?2n+3nlog_{2}n+19)    | -        |
+| 立方阶   | $ O(n^{3}) $   | ![](https://latex.codecogs.com/png.latex?6n^{3}+3n^{2}+4n+10) | -        |
+| 指数阶   | $ O(2^{n}) $   | ![](https://latex.codecogs.com/png.latex?2^{n})               | -        |
+| 阶乘     | $ O(n!) $      | ![](https://latex.codecogs.com/png.latex?n!)                  | -        |
 
 常用的时间复杂度所耗费的时间从小到大依次是:
 
-$ O(1) $ < $ O(log{n}) $ < $ O(n) $ < $ O(nlog{n}) $
-
-![](<https://latex.codecogs.com/png.latex?O(1)>) < ![](<https://latex.codecogs.com/png.latex?O(log{n})>) < ![](<https://latex.codecogs.com/png.latex?O(n)>)
-<![](<https://latex.codecogs.com/png.latex?O(nlog{n})>) < ![](<https://latex.codecogs.com/png.latex?O(n^{2})>) < ![](<https://latex.codecogs.com/png.latex?O(n^{3})>) <
-![](<https://latex.codecogs.com/png.latex?O(2^{n})>) < ![](<https://latex.codecogs.com/png.latex?O(n!)>) < ![](<https://latex.codecogs.com/png.latex?O(n^{n})>)
+$ O(1) $ < $ O(log{n}) $ < $ O(n) $ < $ O(nlog{n}) $ < $ O(n^{2}) $ < $ O(n^{3}) $ < $ O(2^{n}) $ < $ O(n!) $ < $ O(n^{n}) $
 
 ### 空间复杂度
 
 算法的空间复杂度是指算法需要消耗的内存空间。其计算和表示方法与时间复杂度类似，一般都用复杂度的渐近性来表示。同时间复杂度相比，空间复杂度的分析要简单得多。
 
-空间复杂度是对算法运行过程中临时占用空间大小的度量，一个算法所需的存储空间用 ![](<https://latex.codecogs.com/png.latex?f(n)>) 表示，可得出
-![](<https://latex.codecogs.com/png.latex?S(n)=O(f(n))>) ，其中 ![](https://latex.codecogs.com/png.latex?n) 为问题的规模，![](<https://latex.codecogs.com/png.latex?S(n)>) 表示空间
-复杂度。通常用 ![](<https://latex.codecogs.com/png.latex?S(n)>) 来定义。
+空间复杂度是对算法运行过程中临时占用空间大小的度量，一个算法所需的存储空间用 $ f(n) $ 表示，可得出
+$ S(n)=O(f(n)) $ ，其中 ![](https://latex.codecogs.com/png.latex?n) 为问题的规模，$ S(n) $ 表示空间
+复杂度。通常用 $ S(n) $ 来定义。
 
 ### 正确性
 

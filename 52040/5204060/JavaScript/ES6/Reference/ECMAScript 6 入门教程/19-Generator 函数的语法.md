@@ -1,14 +1,14 @@
 # Generator 函数的语法
 
-1.  [简介](https://es6.ruanyifeng.com/#docs/generator#%E7%AE%80%E4%BB%8B)
-2.  [next 方法的参数](https://es6.ruanyifeng.com/#docs/generator#next%20%E6%96%B9%E6%B3%95%E7%9A%84%E5%8F%82%E6%95%B0)
-3.  [for...of 循环](https://es6.ruanyifeng.com/#docs/generator#for...of%20%E5%BE%AA%E7%8E%AF)
-4.  [Generator.prototype.throw()](<https://es6.ruanyifeng.com/#docs/generator#Generator.prototype.throw()>)
-5.  [Generator.prototype.return()](<https://es6.ruanyifeng.com/#docs/generator#Generator.prototype.return()>)
-6.  [next()、throw()、return() 的共同点](<https://es6.ruanyifeng.com/#docs/generator#next()%E3%80%81throw()%E3%80%81return()%20%E7%9A%84%E5%85%B1%E5%90%8C%E7%82%B9>)
-7.  [yield\* 表达式](https://es6.ruanyifeng.com/#docs/generator#yield*%20%E8%A1%A8%E8%BE%BE%E5%BC%8F)
-8.  [作为对象属性的 Generator 函数](https://es6.ruanyifeng.com/#docs/generator#%E4%BD%9C%E4%B8%BA%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%9A%84%20Generator%20%E5%87%BD%E6%95%B0)
-9.  [Generator 函数的 this](https://es6.ruanyifeng.com/#docs/generator#Generator%20%E5%87%BD%E6%95%B0%E7%9A%84this)
+1. [简介](https://es6.ruanyifeng.com/#docs/generator#%E7%AE%80%E4%BB%8B)
+2. [next 方法的参数](https://es6.ruanyifeng.com/#docs/generator#next%20%E6%96%B9%E6%B3%95%E7%9A%84%E5%8F%82%E6%95%B0)
+3. [for...of 循环](https://es6.ruanyifeng.com/#docs/generator#for...of%20%E5%BE%AA%E7%8E%AF)
+4. [Generator.prototype.throw()](<https://es6.ruanyifeng.com/#docs/generator#Generator.prototype.throw() $
+5. [Generator.prototype.return()](<https://es6.ruanyifeng.com/#docs/generator#Generator.prototype.return() $
+6. [next()、throw()、return() 的共同点](<https://es6.ruanyifeng.com/#docs/generator#next()%E3%80%81throw()%E3%80%81return()%20%E7%9A%84%E5%85%B1%E5%90%8C%E7%82%B9 $
+7. [yield\* 表达式](https://es6.ruanyifeng.com/#docs/generator#yield*%20%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+8. [作为对象属性的 Generator 函数](https://es6.ruanyifeng.com/#docs/generator#%E4%BD%9C%E4%B8%BA%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%9A%84%20Generator%20%E5%87%BD%E6%95%B0)
+9. [Generator 函数的 this](https://es6.ruanyifeng.com/#docs/generator#Generator%20%E5%87%BD%E6%95%B0%E7%9A%84this)
 10. [含义](https://es6.ruanyifeng.com/#docs/generator#%E5%90%AB%E4%B9%89)
 11. [应用](https://es6.ruanyifeng.com/#docs/generator#%E5%BA%94%E7%94%A8)
 

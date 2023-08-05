@@ -1,11 +1,11 @@
 # Class 的继承
 
-1.  [简介](https://es6.ruanyifeng.com/#docs/class-extends#%E7%AE%80%E4%BB%8B)
-2.  [Object.getPrototypeOf()](<https://es6.ruanyifeng.com/#docs/class-extends#Object.getPrototypeOf()>)
-3.  [super 关键字](https://es6.ruanyifeng.com/#docs/class-extends#super%20%E5%85%B3%E9%94%AE%E5%AD%97)
-4.  [类的 prototype 属性和\_\_proto\_\_属性](https://es6.ruanyifeng.com/#docs/class-extends#%E7%B1%BB%E7%9A%84%20prototype%20%E5%B1%9E%E6%80%A7%E5%92%8C__proto__%E5%B1%9E%E6%80%A7)
-5.  [原生构造函数的继承](https://es6.ruanyifeng.com/#docs/class-extends#%E5%8E%9F%E7%94%9F%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E7%BB%A7%E6%89%BF)
-6.  [Mixin 模式的实现](https://es6.ruanyifeng.com/#docs/class-extends#Mixin%20%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0)
+1. [简介](https://es6.ruanyifeng.com/#docs/class-extends#%E7%AE%80%E4%BB%8B)
+2. [Object.getPrototypeOf()](<https://es6.ruanyifeng.com/#docs/class-extends#Object.getPrototypeOf() $
+3. [super 关键字](https://es6.ruanyifeng.com/#docs/class-extends#super%20%E5%85%B3%E9%94%AE%E5%AD%97)
+4. [类的 prototype 属性和\_\_proto\_\_属性](https://es6.ruanyifeng.com/#docs/class-extends#%E7%B1%BB%E7%9A%84%20prototype%20%E5%B1%9E%E6%80%A7%E5%92%8C__proto__%E5%B1%9E%E6%80%A7)
+5. [原生构造函数的继承](https://es6.ruanyifeng.com/#docs/class-extends#%E5%8E%9F%E7%94%9F%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E7%BB%A7%E6%89%BF)
+6. [Mixin 模式的实现](https://es6.ruanyifeng.com/#docs/class-extends#Mixin%20%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0)
 
 ## 简介
 

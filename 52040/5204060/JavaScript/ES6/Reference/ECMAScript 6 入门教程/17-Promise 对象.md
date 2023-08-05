@@ -1,18 +1,18 @@
 # Promise 对象
 
-1.  [Promise 的含义](https://es6.ruanyifeng.com/#docs/promise#Promise%20%E7%9A%84%E5%90%AB%E4%B9%89)
-2.  [基本用法](https://es6.ruanyifeng.com/#docs/promise#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95)
-3.  [Promise.prototype.then()](<https://es6.ruanyifeng.com/#docs/promise#Promise.prototype.then()>)
-4.  [Promise.prototype.catch()](<https://es6.ruanyifeng.com/#docs/promise#Promise.prototype.catch()>)
-5.  [Promise.prototype.finally()](<https://es6.ruanyifeng.com/#docs/promise#Promise.prototype.finally()>)
-6.  [Promise.all()](<https://es6.ruanyifeng.com/#docs/promise#Promise.all()>)
-7.  [Promise.race()](<https://es6.ruanyifeng.com/#docs/promise#Promise.race()>)
-8.  [Promise.allSettled()](<https://es6.ruanyifeng.com/#docs/promise#Promise.allSettled()>)
-9.  [Promise.any()](<https://es6.ruanyifeng.com/#docs/promise#Promise.any()>)
-10. [Promise.resolve()](<https://es6.ruanyifeng.com/#docs/promise#Promise.resolve()>)
-11. [Promise.reject()](<https://es6.ruanyifeng.com/#docs/promise#Promise.reject()>)
+1. [Promise 的含义](https://es6.ruanyifeng.com/#docs/promise#Promise%20%E7%9A%84%E5%90%AB%E4%B9%89)
+2. [基本用法](https://es6.ruanyifeng.com/#docs/promise#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95)
+3. [Promise.prototype.then()](<https://es6.ruanyifeng.com/#docs/promise#Promise.prototype.then() $
+4. [Promise.prototype.catch()](<https://es6.ruanyifeng.com/#docs/promise#Promise.prototype.catch() $
+5. [Promise.prototype.finally()](<https://es6.ruanyifeng.com/#docs/promise#Promise.prototype.finally() $
+6. [Promise.all()](<https://es6.ruanyifeng.com/#docs/promise#Promise.all() $
+7. [Promise.race()](<https://es6.ruanyifeng.com/#docs/promise#Promise.race() $
+8. [Promise.allSettled()](<https://es6.ruanyifeng.com/#docs/promise#Promise.allSettled() $
+9. [Promise.any()](<https://es6.ruanyifeng.com/#docs/promise#Promise.any() $
+10. [Promise.resolve()](<https://es6.ruanyifeng.com/#docs/promise#Promise.resolve() $
+11. [Promise.reject()](<https://es6.ruanyifeng.com/#docs/promise#Promise.reject() $
 12. [应用](https://es6.ruanyifeng.com/#docs/promise#%E5%BA%94%E7%94%A8)
-13. [Promise.try()](<https://es6.ruanyifeng.com/#docs/promise#Promise.try()>)
+13. [Promise.try()](<https://es6.ruanyifeng.com/#docs/promise#Promise.try() $
 
 ## Promise 的含义
 
