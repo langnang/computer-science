@@ -64,7 +64,7 @@
 
 常用的时间复杂度所耗费的时间从小到大依次是:
 
-$O(1)$ < $O(log{n})$ < $O(n)$ < $O(nlog{n})$
+$ O(1) $ < $ O(log{n}) $ < $ O(n) $ < $ O(nlog{n}) $
 
 ![](<https://latex.codecogs.com/png.latex?O(1)>) < ![](<https://latex.codecogs.com/png.latex?O(log{n})>) < ![](<https://latex.codecogs.com/png.latex?O(n)>)
 <![](<https://latex.codecogs.com/png.latex?O(nlog{n})>) < ![](<https://latex.codecogs.com/png.latex?O(n^{2})>) < ![](<https://latex.codecogs.com/png.latex?O(n^{3})>) <
