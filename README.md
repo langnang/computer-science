@@ -39,9 +39,9 @@
 <!-- - 5204030 程序设计及其语言 -->
 <!-- - 5204040 编译系统 -->
 - 5204050 数据库
-  - SQLite
-  - MySQL
-  - PostgreSQL
+  - [SQLite](./52040/5204050/SQLite/README.md)
+  - [MySQL](./52040/5204050/MySQL/README.md)
+  - [PostgreSQL](./52040/5204050/PostgreSQL/README.md)
 - 5204060 软件开发环境与开发技术
   - [HTML](./52040/5204060/HTML/README.md)
   - [CSS](./52040/5204060/CSS/README.md)
@@ -56,7 +56,7 @@
       <!-- - [React Native] -->
     - [Vue](./52040/5204060/Vue/README.md)
   - [Composer Packages](./)
-<!-- - 5204070 软件工程 -->
+- [5204070 软件工程](./52040/5204070/README.md)
 <!-- - 5204099 计算机软件其他学科 -->
 
 <!-- ## 52050 计算机工程
